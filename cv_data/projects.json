@@ -2,7 +2,7 @@
   {
     "id": "PROJ-014",
     "title": "DART — Humanoid Robot Platform",
-    "description": "Full humanoid robotic platform for real-time human motion mimicry, voice control, and object detection. Dual 7-DOF RealMan RM75 collaborative arms, mobile AGV base, 2-DOF servo head, dexterous hands, Intel RealSense RGB-D camera. Perception pipeline uses MediaPipe Pose (33 landmarks) with custom geometric cosine-similarity matching against pre-recorded pose database. Voice control via OpenAI Whisper (offline ASR) with 23-command vocabulary and difflib fuzzy matching. Object detection via YOLOv8x-WorldV2 with runtime class switching. RL component uses PPO (Stable Baselines3) trained in Gazebo. All subsystems integrated under ROS1. Supervised by Dr. Feras Dayoub at AIML, University of Adelaide. Featured on Jamuna TV and Australia Awards Bangladesh.",
+    "description": "Full humanoid robotic platform for real-time human motion mimicry, voice control, and object detection. Dual 7-DOF RealMan RM75 collaborative arms, mobile AGV base, 2-DOF servo head, dexterous hands, Intel RealSense RGB-D camera. Perception pipeline uses MediaPipe Pose (33 landmarks) with custom geometric cosine-similarity matching against pre-recorded pose database. Voice control via OpenAI Whisper (offline ASR) with 23-command vocabulary and difflib fuzzy matching. Object detection via YOLOv8x-WorldV2 with runtime class switching. RL component uses PPO (Stable Baselines3) trained in Gazebo. All subsystems integrated under ROS1. Supervised by Dr. Feras Dayoub at AIML, University of Adelaide and supported by Australia Awards Bangladesh.",
     "employer": "Australian Institute for Machine Learning (AIML), University of Adelaide",
     "my_role": "Lead Researcher & Developer (MSc Capstone)",
     "project_type": "Professional",
@@ -389,6 +389,9 @@
     ],
     "period": "2016–2017",
     "publication": "ICAR 2017, Hong Kong — DOI: 10.1109/ICAR.2017.8023638",
+    "links": {
+      "jamuna_tv": "https://youtu.be/Q5s9ATJvwXU?t=67"
+    },
     "tags": [
       "Robotics",
       "Embedded / Hardware",
