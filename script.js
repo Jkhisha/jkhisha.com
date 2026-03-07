@@ -113,7 +113,9 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeLig
 
 /* ── PROJECT MODAL ── */
 function buildModalGallery(assets) {
-  return (assets || []).map(a => ({ type: a.type, src: a.path, caption: a.caption || '' }));
+  return (assets || [])
+    .filter(a => a.type === 'image' || a.type === 'video')
+    .map(a => ({ type: a.type, src: a.path, caption: a.caption || '' }));
 }
 
 let _modalGallery = [];
