@@ -114,7 +114,7 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeLig
 /* ── PROJECT MODAL ── */
 function toYouTubeEmbed(url) {
   const match = url.match(/(?:youtu\.be\/|[?&]v=|shorts\/)([^?&\s]+)/);
-  return match ? `https://www.youtube.com/embed/${match[1]}?rel=0` : null;
+  return match ? `https://www.youtube-nocookie.com/embed/${match[1]}?rel=0` : null;
 }
 
 function buildModalGallery(proj, assets) {
