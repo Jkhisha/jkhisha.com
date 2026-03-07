@@ -229,6 +229,7 @@ function setModalViewer(idx) {
 function closeProjectModal() {
   const modal = document.getElementById('proj-modal');
   if (!modal) return;
+  if (modal.contains(document.activeElement)) document.activeElement.blur();
   modal.classList.remove('active');
   modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
