@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="_x30_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" viewBox="0 0 560 288" style="enable-background:new 0 0 560 288;" xml:space="preserve">
+<style type="text/css">
+  .rect-fill{fill:#4f8ef7;stroke:none;}
+  .poly-stroke{fill:none;stroke:#4f8ef7;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g id="LWPOLYLINE">
+  <rect x="73.6" y="144" class="rect-fill" width="86.47" height="144.12"/>
+</g>
+<g id="LWPOLYLINE_1_">
+  <rect x="177.37" y="-0.12" class="rect-fill" width="86.47" height="288.24"/>
+</g>
+<g id="LWPOLYLINE_2_">
+  <polygon class="poly-stroke" points="311.71,174.57 486.4,-0.12 364.11,-0.12 281.13,82.86 281.13,205.14"/>
+</g>
+<g id="LWPOLYLINE_3_">
+  <polygon class="poly-stroke" points="293.36,217.37 364.11,288.12 486.4,288.12 354.51,156.23"/>
+</g>
+</svg>

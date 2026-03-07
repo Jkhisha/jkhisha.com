@@ -1,0 +1,2206 @@
+[
+  {
+    "id": "AST-001",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/face.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Profile photo (sidebar)",
+    "description": "Joytu Khisha profile photo — used as nav sidebar avatar on old website.",
+    "remarks": null
+  },
+  {
+    "id": "AST-002",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/face1.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Profile photo (hero background)",
+    "description": "Joytu Khisha profile photo — used as full-screen hero background on old website.",
+    "remarks": null
+  },
+  {
+    "id": "AST-003",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/avatar2.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Avatar photo",
+    "description": "Alternative profile/avatar photo of Joytu Khisha.",
+    "remarks": null
+  },
+  {
+    "id": "AST-010",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p1a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-001"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Dress Mirror — thumbnail",
+    "description": "Thumbnail for Dress Mirror AR try-on project (old site grid).",
+    "remarks": null
+  },
+  {
+    "id": "AST-011",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p1b.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-001"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Dress Mirror — detail photo",
+    "description": "Secondary photo for Dress Mirror shown in project detail panel.",
+    "remarks": null
+  },
+  {
+    "id": "AST-012",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p2a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-002"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Lunasphere — game screenshot",
+    "description": "Screenshot or artwork for the Lunasphere cross-platform game.",
+    "remarks": null
+  },
+  {
+    "id": "AST-013",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p3a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": "~2013–2017",
+    "caption": "Discarded project thumbnail (p3a)",
+    "description": "Screenshot — project discarded (Vibgyor browser game removed from portfolio).",
+    "remarks": "Project removed"
+  },
+  {
+    "id": "AST-014",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p4a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-004"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Jump-man PC — game screenshot",
+    "description": "Screenshot of the Jump-man C++/Allegro 2D game.",
+    "remarks": "Both p4a.jpg and p4a.png existed — second overwrote first during WebP conversion"
+  },
+  {
+    "id": "AST-016",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p5a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-005"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Spider-bot — robot photo",
+    "description": "Photo of the Arduino Bluetooth spider robot.",
+    "remarks": null
+  },
+  {
+    "id": "AST-017",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p6a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-006"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Remote Controlled Car — photo",
+    "description": "Photo of one of the Arduino/Bluetooth RC car iterations.",
+    "remarks": null
+  },
+  {
+    "id": "AST-018",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p7a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-007"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Posture Detection — output visualization",
+    "description": "3D posture detection output showing stickman from 2D input image.",
+    "remarks": null
+  },
+  {
+    "id": "AST-019",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p7b.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-007"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Posture Detection — secondary visualization",
+    "description": "Second output visualization for the posture detection project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-020",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p8a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — result chart 1",
+    "description": "Watershed clustering result visualization applied to homicide data.",
+    "remarks": null
+  },
+  {
+    "id": "AST-021",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p8b.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — result chart 2",
+    "description": "Second result visualization for the Watershed clustering project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-022",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p8c.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — result chart 3",
+    "description": "Third result visualization for the Watershed clustering project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-023",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p8d.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — main result / thumbnail",
+    "description": "Main result image; used as project grid thumbnail on old site.",
+    "remarks": null
+  },
+  {
+    "id": "AST-024",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p9a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Speech Responsive Robot — photo 1",
+    "description": "Photo of the 12-DOF speech-responsive mobile robot (ICAR 2017).",
+    "remarks": null
+  },
+  {
+    "id": "AST-025",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p9b.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Speech Responsive Robot — photo 2",
+    "description": "Second photo of the speech-responsive robot.",
+    "remarks": null
+  },
+  {
+    "id": "AST-026",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p10a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Discarded project thumbnail (p10a)",
+    "description": "Thumbnail image — project discarded.",
+    "remarks": "Project removed — no public details"
+  },
+  {
+    "id": "AST-027",
+    "type": "image",
+    "folder": "projects",
+    "path": "assets/projects/p11a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Discarded project thumbnail (p11a)",
+    "description": "Thumbnail image — project discarded.",
+    "remarks": "Project removed — no public details"
+  },
+  {
+    "id": "AST-029",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p1a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-001"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Dress Mirror — thumbnail (images copy)",
+    "description": "Copy of p1a from images/ folder — same image as assets/projects/p1a.webp.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-030",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p2a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-002"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Lunasphere — screenshot (images copy)",
+    "description": "Copy of p2a from images/ folder.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-031",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p4a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-004"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Jump-man PC — screenshot (images copy)",
+    "description": "Copy of p4a from images/ folder.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-032",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p7a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-007"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Posture Detection — visualization (images copy)",
+    "description": "Copy of p7a from images/ folder.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-033",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p8a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — chart (images copy)",
+    "description": "Copy of p8a from images/ folder.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-034",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p8d.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Watershed Model — main result (images copy)",
+    "description": "Copy of p8d from images/ folder.",
+    "remarks": "Duplicate origin from joytu-khisha/assets/images/"
+  },
+  {
+    "id": "AST-035",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p10a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Discarded project thumbnail (p10a — images copy)",
+    "description": "Copy of p10a from images/ folder — project discarded.",
+    "remarks": "Project removed — no public details"
+  },
+  {
+    "id": "AST-036",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p11a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Discarded project thumbnail (p11a — images copy)",
+    "description": "Copy of p11a from images/ folder — project discarded.",
+    "remarks": "Project removed — no public details"
+  },
+  {
+    "id": "AST-037",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-2d.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — field/site photo (p-2d)",
+    "description": "On-site photo for KSRM Gas Regulating & Metering Station project, Sitakunda.",
+    "remarks": null
+  },
+  {
+    "id": "AST-038",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3a.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot a",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-039",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3b.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot b",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-040",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3c.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot c",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-041",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3d.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot d",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-042",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3e.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot e",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-043",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/p-3g.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — screenshot g",
+    "description": "App screenshot or related photo for the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-050",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p-2.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-002"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "Lunasphere — gameplay demo",
+    "description": "Video demo of the Lunasphere cross-platform game. Referenced as vid/p2.mp4 in old site.",
+    "remarks": null
+  },
+  {
+    "id": "AST-051",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p4.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-004"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Jump-man PC — gameplay demo",
+    "description": "Video demo of the Jump-man 2D PC game.",
+    "remarks": null
+  },
+  {
+    "id": "AST-052",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p6a.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-006"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Remote Controlled Car — demo 1",
+    "description": "Primary demo video for RC Car (old site vid/p6a.mp4).",
+    "remarks": null
+  },
+  {
+    "id": "AST-053",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p6.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-006"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Remote Controlled Car — demo 2",
+    "description": "Secondary gallery video for RC Car (old site vid/p6.mp4).",
+    "remarks": null
+  },
+  {
+    "id": "AST-054",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p9.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "2016–2017",
+    "caption": "Speech Responsive Robot — demo",
+    "description": "Demo of the speech-responsive robot responding to verbal commands.",
+    "remarks": null
+  },
+  {
+    "id": "AST-055",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/p12.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-027"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Java Fighting Game — gameplay demo",
+    "description": "Gameplay demo of the Java 2D fighting game built during NSU university period.",
+    "remarks": null
+  },
+  {
+    "id": "AST-056",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/VID_20140926_120542.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-028"
+    ],
+    "time_range": "2014-09-26",
+    "caption": "NSUCEC Mechatronics Workshop — clip 1",
+    "description": "Video from the NSUCEC microcontroller robot control workshop, Sep 2014. Joytu was instructor and R&D Head.",
+    "remarks": null
+  },
+  {
+    "id": "AST-057",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/VID_20140926_121606.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-028"
+    ],
+    "time_range": "2014-09-26",
+    "caption": "NSUCEC Mechatronics Workshop — clip 2",
+    "description": "Second clip from the NSUCEC mechatronics workshop, same session as AST-056.",
+    "remarks": null
+  },
+  {
+    "id": "AST-058",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/20220225_114637.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-019"
+    ],
+    "time_range": "2022-02-25",
+    "caption": "Summit Bibiyana Power Plant — site video",
+    "description": "On-site video from Summit Bibiyana Power Plant R&MS project, Feb 2022.",
+    "remarks": null
+  },
+  {
+    "id": "AST-059",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/r1-2024-10-27_20.09.20.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024-10-27",
+    "caption": "DART robot recording — Oct 2024",
+    "description": "Recording from Oct 2024 during DART project period at AIML, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-060",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/SSET Robotics Team004.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "SSET Robotics Team — clip 1",
+    "description": "Robotics team video from SSET Mechatronic Workshop / NSU robotics competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-061",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/SSET Robotics Team007.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "SSET Robotics Team — clip 2",
+    "description": "Second SSET robotics team clip.",
+    "remarks": null
+  },
+  {
+    "id": "AST-062",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/SSET Robotics Team10.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "SSET Robotics Team — clip 3",
+    "description": "Third SSET robotics team clip.",
+    "remarks": null
+  },
+  {
+    "id": "AST-063",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/SSET Robotics Team12.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "SSET Robotics Team — clip 4",
+    "description": "Fourth SSET robotics team clip.",
+    "remarks": null
+  },
+  {
+    "id": "AST-064",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/SSET Robotics Team14.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "~2015–2017",
+    "caption": "SSET Robotics Team — clip 5",
+    "description": "Fifth SSET robotics team clip.",
+    "remarks": null
+  },
+  {
+    "id": "AST-200",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20201129_105933.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2020-11-29",
+    "caption": "KSRM Gas R&MS — field photo Nov 2020",
+    "description": "On-site photo at KSRM Gas R&MS, Sitakunda, Chattogram (Nov 2020).",
+    "remarks": null
+  },
+  {
+    "id": "AST-201",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210101_091443.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-029"
+    ],
+    "time_range": "2021-01-01",
+    "caption": "Hot Tapping Project — field photo Jan 2021",
+    "description": "On-site photo from hot tapping pipeline project, Jan 1, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-202",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210101_175223.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-029"
+    ],
+    "time_range": "2021-01-01",
+    "caption": "Hot Tapping Project — field photo Jan 2021 (2)",
+    "description": "Second photo from hot tapping project, same day as AST-201.",
+    "remarks": null
+  },
+  {
+    "id": "AST-203",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210617_194443.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-06-17",
+    "caption": "Titas Wellhead Compressor — field photo Jun 2021",
+    "description": "On-site photo at Titas/Narsingdi Wellhead Compressor project, Jun 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-204",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210626_020845.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-06-26",
+    "caption": "Titas Wellhead Compressor — field photo Jun 2021 (2)",
+    "description": "On-site photo at Titas Wellhead Compressor, Jun 26, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-205",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210705_160343.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-07-05",
+    "caption": "Titas Wellhead Compressor — field photo Jul 2021",
+    "description": "On-site photo at Titas Wellhead Compressor, Jul 5, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-206",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210726_134813.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-07-26",
+    "caption": "Titas Wellhead Compressor — field photo Jul 2021 (2)",
+    "description": "On-site photo at Titas Wellhead Compressor, Jul 26, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-207",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20210907_133324.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2021-09-07",
+    "caption": "KSRM Gas R&MS — field photo Sep 2021",
+    "description": "On-site photo at KSRM Gas R&MS, Sitakunda, Sep 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-208",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20211206_154345.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-022"
+    ],
+    "time_range": "2021-12-06",
+    "caption": "Glycol Plant — field photo Dec 2021",
+    "description": "On-site photo at glycol dehydration plant, Dec 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-209",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20211207_131514.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-022"
+    ],
+    "time_range": "2021-12-07",
+    "caption": "Glycol Plant — field photo Dec 2021 (2)",
+    "description": "Second on-site photo at glycol dehydration plant, Dec 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-210",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20220225_114625.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-015",
+      "PROJ-016"
+    ],
+    "time_range": "2022-02-25",
+    "caption": "Site photo — Feb 2022",
+    "description": "Photo Feb 25, 2022. GP Tower / KSRM Gas R&MS period (Zicom/Rantech).",
+    "remarks": null
+  },
+  {
+    "id": "AST-211",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20220225_115828.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-015",
+      "PROJ-016"
+    ],
+    "time_range": "2022-02-25",
+    "caption": "Site photo — Feb 2022 (2)",
+    "description": "Second photo from Feb 25, 2022 session.",
+    "remarks": null
+  },
+  {
+    "id": "AST-212",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20230208-WA0020.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": "2023-02-08",
+    "caption": "Profile photo — Feb 2023",
+    "description": "Personal/profile photo, Feb 2023.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-220",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/_DSC0995.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-030"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "NSU Robot Competition — DSLR photo 1",
+    "description": "DSLR photo from NSU university robot competition (Arduino RF motor control).",
+    "remarks": null
+  },
+  {
+    "id": "AST-221",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/_DSC0997.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-030"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "NSU Robot Competition — DSLR photo 2",
+    "description": "DSLR photo from NSU robot competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-222",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/_DSC0999.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-030"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "NSU Robot Competition — DSLR photo 3",
+    "description": "DSLR photo from NSU robot competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-223",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/_DSC1009.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-030"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "NSU Robot Competition — DSLR photo 4",
+    "description": "DSLR photo from NSU robot competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-224",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/_DSC1028.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-030"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "NSU Robot Competition — DSLR photo 5",
+    "description": "DSLR photo from NSU robot competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-225",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/DSC_3059.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Profile photo — DSC_3059",
+    "description": "Personal/profile photo.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-226",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/ADT03101.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 1",
+    "description": "Personal photo (wedding). For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-227",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/ADT03102.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 2",
+    "description": "Personal photo (wedding). For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-228",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/ADT03103.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 3",
+    "description": "Personal photo (wedding). For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-229",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/ADT03104.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 4",
+    "description": "Personal photo (wedding). For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-230",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/ADT03105.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 5",
+    "description": "Personal photo (wedding). For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-231",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/PBT05247_2.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 6",
+    "description": "Personal photo. For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-232",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/PBT06424_2.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": null,
+    "caption": "Personal photo — 7",
+    "description": "Personal photo. For use as portfolio/hero/profile image.",
+    "remarks": "Portfolio use — not project-specific"
+  },
+  {
+    "id": "AST-234",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/359788242_757146999546563_4467439161242641150_n.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-026"
+    ],
+    "time_range": "2023",
+    "caption": "Orbital Remedies — Space Debris Hackathon team photo",
+    "description": "Team photo from the AuSpace Society space hackathon, 2023. Winners of the Space Debris category.",
+    "remarks": null
+  },
+  {
+    "id": "AST-240",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot",
+    "description": "Screen capture from KSRM Gas Regulating & Metering Station PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-241",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture1.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot 1",
+    "description": "Screen capture 1 from KSRM Gas R&MS PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-242",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture3.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot 3",
+    "description": "Screen capture 3 from KSRM Gas R&MS PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-243",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture6.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot 6",
+    "description": "Screen capture 6 from KSRM Gas R&MS PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-244",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture13.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot 13",
+    "description": "Screen capture 13 from KSRM Gas R&MS PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-245",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/Capture18.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2019–2021",
+    "caption": "KSRM Gas R&MS — HMI/software screenshot 18",
+    "description": "Screen capture 18 from KSRM Gas R&MS PLC/HMI software.",
+    "remarks": null
+  },
+  {
+    "id": "AST-400",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20201110-WA0031.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2020-11-10",
+    "caption": "KSRM Gas R&MS — WhatsApp photo Nov 2020",
+    "description": "WhatsApp photo from KSRM Gas R&MS site, Nov 10, 2020.",
+    "remarks": null
+  },
+  {
+    "id": "AST-401",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20201110-WA0032.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2020-11-10",
+    "caption": "KSRM Gas R&MS — WhatsApp photo Nov 2020 (2)",
+    "description": "Second WhatsApp photo from KSRM Gas R&MS site, Nov 10, 2020.",
+    "remarks": null
+  },
+  {
+    "id": "AST-402",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20201112-WA0000.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2020-11-12",
+    "caption": "KSRM Gas R&MS — WhatsApp photo Nov 2020 (3)",
+    "description": "WhatsApp photo from KSRM Gas R&MS site, Nov 12, 2020.",
+    "remarks": null
+  },
+  {
+    "id": "AST-403",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20210927-WA0008.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-019"
+    ],
+    "time_range": "2021-09-27",
+    "caption": "Summit Bibiyana Power Plant — WhatsApp photo Sep 2021",
+    "description": "WhatsApp photo from Summit Bibiyana Power Plant R&MS site, Sep 27, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-407",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20210927-WA0009.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-019"
+    ],
+    "time_range": "2021-09-27",
+    "caption": "Summit Bibiyana Power Plant — WhatsApp photo Sep 2021 (2)",
+    "description": "Second WhatsApp photo from Summit Bibiyana, Sep 27, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-408",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20210927-WA0017.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-019"
+    ],
+    "time_range": "2021-09-27",
+    "caption": "Summit Bibiyana Power Plant — WhatsApp photo Sep 2021 (3)",
+    "description": "Third WhatsApp photo from Summit Bibiyana, Sep 27, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-409",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20210927-WA0027.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-019"
+    ],
+    "time_range": "2021-09-27",
+    "caption": "Summit Bibiyana Power Plant — WhatsApp photo Sep 2021 (4)",
+    "description": "Fourth WhatsApp photo from Summit Bibiyana, Sep 27, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-404",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211020-WA0003.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-10-20",
+    "caption": "Titas Wellhead Compressor — WhatsApp photo Oct 2021",
+    "description": "WhatsApp photo from Titas/Narsingdi Wellhead Compressor site, Oct 20, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-410",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211020-WA0006.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-10-20",
+    "caption": "Titas Wellhead Compressor — WhatsApp photo Oct 2021 (2)",
+    "description": "Second WhatsApp photo from Titas Wellhead Compressor, Oct 20, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-411",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211020-WA0021.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-10-20",
+    "caption": "Titas Wellhead Compressor — WhatsApp photo Oct 2021 (3)",
+    "description": "Third WhatsApp photo from Titas Wellhead Compressor, Oct 20, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-412",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211020-WA0028.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-10-20",
+    "caption": "Titas Wellhead Compressor — WhatsApp photo Oct 2021 (4)",
+    "description": "Fourth WhatsApp photo from Titas Wellhead Compressor, Oct 20, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-405",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211022-WA0005.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-017"
+    ],
+    "time_range": "2021-10-22",
+    "caption": "Titas Wellhead Compressor — WhatsApp photo Oct 2021 (5)",
+    "description": "WhatsApp photo from Titas Wellhead Compressor, Oct 22, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-406",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG-20211209-WA0006.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-022"
+    ],
+    "time_range": "2021-12-09",
+    "caption": "Glycol Plant — WhatsApp photo Dec 2021",
+    "description": "WhatsApp photo from glycol dehydration plant site, Dec 9, 2021.",
+    "remarks": null
+  },
+  {
+    "id": "AST-500",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_1796.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_1796",
+    "description": "Photo from DART humanoid robot project at AIML, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-501",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_1807.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_1807",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-502",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2777.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2777",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-503",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2781.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2781",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-504",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2787.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2787",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-505",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2804.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2804",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-506",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2805.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2805",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-507",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2806.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2806",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-508",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_2810.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "DART — photo IMG_2810",
+    "description": "Photo from DART project, University of Adelaide.",
+    "remarks": null
+  },
+  {
+    "id": "AST-510",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_0648.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-031"
+    ],
+    "time_range": "2023–2024",
+    "caption": "Selentium Defence — Space Hackathon photo 1",
+    "description": "Photo from Selentium Defence space hackathon event.",
+    "remarks": null
+  },
+  {
+    "id": "AST-511",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_0649.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-031"
+    ],
+    "time_range": "2023–2024",
+    "caption": "Selentium Defence — Space Hackathon photo 2",
+    "description": "Photo from Selentium Defence space hackathon event.",
+    "remarks": null
+  },
+  {
+    "id": "AST-512",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_0650.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-031"
+    ],
+    "time_range": "2023–2024",
+    "caption": "Selentium Defence — Space Hackathon photo 3",
+    "description": "Photo from Selentium Defence space hackathon event.",
+    "remarks": null
+  },
+  {
+    "id": "AST-513",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_0668.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-032"
+    ],
+    "time_range": "2023–2024",
+    "caption": "KPMG Space Hackathon — photo 1",
+    "description": "Photo from KPMG space hackathon event.",
+    "remarks": null
+  },
+  {
+    "id": "AST-514",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_0669.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-032"
+    ],
+    "time_range": "2023–2024",
+    "caption": "KPMG Space Hackathon — photo 2",
+    "description": "Photo from KPMG space hackathon event.",
+    "remarks": null
+  },
+  {
+    "id": "AST-515",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_E2620.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": "2024",
+    "caption": "University of Adelaide — graduation photo 1",
+    "description": "Graduation ceremony photo at University of Adelaide.",
+    "remarks": "Personal — UniAdelaide graduation ceremony"
+  },
+  {
+    "id": "AST-516",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/IMG_E2634.webp",
+    "asset_extsn": "webp",
+    "project_fids": [],
+    "time_range": "2024",
+    "caption": "University of Adelaide — graduation photo 2",
+    "description": "Second graduation ceremony photo at University of Adelaide.",
+    "remarks": "Personal — UniAdelaide graduation ceremony"
+  },
+  {
+    "id": "AST-300",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c1.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "2015",
+    "caption": "Certificate — Robo Fight 2015",
+    "description": "Participation certificate from Robo Fight 2015 robotics competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-301",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c2.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — ICCIT Project Showcase",
+    "description": "Participation certificate from ICCIT Project Showcase.",
+    "remarks": null
+  },
+  {
+    "id": "AST-302",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c3.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — MATLAB Workshop",
+    "description": "Participation certificate from MATLAB Workshop.",
+    "remarks": null
+  },
+  {
+    "id": "AST-303",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c4.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — Robotour & Programming Contest",
+    "description": "Participation certificate from Robotour and Programming Contest.",
+    "remarks": null
+  },
+  {
+    "id": "AST-304",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c5.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — BUET Planetrix",
+    "description": "Participation certificate from BUET Planetrix competition.",
+    "remarks": null
+  },
+  {
+    "id": "AST-305",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c6.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "2015",
+    "caption": "Certificate — ICCIT 2015",
+    "description": "Participation certificate from ICCIT 2015.",
+    "remarks": null
+  },
+  {
+    "id": "AST-306",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c7.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — Linux Workshop",
+    "description": "Participation certificate from Linux Workshop.",
+    "remarks": null
+  },
+  {
+    "id": "AST-307",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c8.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — Mechatronics Workshop",
+    "description": "Certificate from SSET Mechatronic Workshop.",
+    "remarks": "Old site incorrectly displayed c4.jpg in modal — actual file is c8.jpg"
+  },
+  {
+    "id": "AST-308",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c9.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — Electronic App Design Workshop",
+    "description": "Participation certificate from Electronic App Design Workshop.",
+    "remarks": null
+  },
+  {
+    "id": "AST-309",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c10.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": "~2013–2017",
+    "caption": "Certificate — Power Energy Hackathon",
+    "description": "Participation certificate from Power Energy Hackathon.",
+    "remarks": null
+  },
+  {
+    "id": "AST-310",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c11.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": null,
+    "caption": "Certificate — unknown (c11)",
+    "description": "Certificate c11 — not in old website. Possibly ABB or Honeywell professional cert.",
+    "remarks": "VERIFY — Joytu to label c11–c15"
+  },
+  {
+    "id": "AST-311",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c12.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": null,
+    "caption": "Certificate — unknown (c12)",
+    "description": "Certificate c12 — not in old website.",
+    "remarks": "VERIFY"
+  },
+  {
+    "id": "AST-312",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c13.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": null,
+    "caption": "Certificate — unknown (c13)",
+    "description": "Certificate c13 — not in old website.",
+    "remarks": "VERIFY"
+  },
+  {
+    "id": "AST-313",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c14.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": null,
+    "caption": "Certificate — unknown (c14)",
+    "description": "Certificate c14 — not in old website.",
+    "remarks": "VERIFY"
+  },
+  {
+    "id": "AST-314",
+    "type": "certificate",
+    "folder": "certificates",
+    "path": "assets/certificates/c15.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-033"
+    ],
+    "time_range": null,
+    "caption": "Certificate — unknown (c15)",
+    "description": "Certificate c15 — not in old website. Possibly ABB System 800xA DCS or Honeywell ControlEdge PLC professional training cert.",
+    "remarks": "VERIFY"
+  },
+  {
+    "id": "AST-100",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/LWE2oWngUGU",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024",
+    "caption": "DART — Full Demo Video",
+    "description": "Full demonstration of the DART humanoid robot platform.",
+    "remarks": null
+  },
+  {
+    "id": "AST-101",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/UcY72P1Cr3o",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024",
+    "caption": "DART — Perception Pipeline Video",
+    "description": "MediaPipe-based human pose mimicry perception pipeline demo.",
+    "remarks": null
+  },
+  {
+    "id": "AST-102",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtube.com/shorts/dJYg_jFyXGc",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024",
+    "caption": "DART — RL Robot Manipulation",
+    "description": "PPO RL-based manipulation demo in Gazebo simulation.",
+    "remarks": "YouTube Shorts format"
+  },
+  {
+    "id": "AST-103",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/VnZd97txaXw",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024",
+    "caption": "DART — University of Adelaide Feature Video",
+    "description": "AIML Research Scholarship feature video about DART robotics research.",
+    "remarks": null
+  },
+  {
+    "id": "AST-104",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/Q5s9ATJvwXU?t=67",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2024",
+    "caption": "Jamuna TV — National Television Interview",
+    "description": "Interview on Jamuna TV (Bangladesh national TV) about the DART robot capstone.",
+    "remarks": "Timecode: 1:07"
+  },
+  {
+    "id": "AST-105",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/hlg_i7pxFvM",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-015"
+    ],
+    "time_range": "2022",
+    "caption": "GP Tower Surveillance — Demo 1",
+    "description": "First demo of the Grameenphone tower surveillance platform.",
+    "remarks": null
+  },
+  {
+    "id": "AST-106",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/ARqTvFkvVEk",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-015"
+    ],
+    "time_range": "2022",
+    "caption": "GP Tower Surveillance — Demo 2",
+    "description": "Second demo of the tower surveillance platform.",
+    "remarks": null
+  },
+  {
+    "id": "AST-107",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/pVTxT52LO-E",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-016"
+    ],
+    "time_range": "2021",
+    "caption": "KSRM Gas R&MS — PLC/HMI Demo",
+    "description": "Demo of the KSRM gas Regulating & Metering Station PLC-based DCS and HMI.",
+    "remarks": null
+  },
+  {
+    "id": "AST-108",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/-rcxRJMF2xs",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-013"
+    ],
+    "time_range": "2019–2022",
+    "caption": "Zicom Inventory System — Demo",
+    "description": "Demo of the full-stack inventory management app built for Zicom Equipment.",
+    "remarks": null
+  },
+  {
+    "id": "AST-109",
+    "type": "youtube",
+    "folder": "external",
+    "path": "https://youtu.be/jBN9oDP1Vfg",
+    "asset_extsn": "youtube",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–2019",
+    "caption": "Bengali Tripitaka App — Demo",
+    "description": "Demo of the Bengali Tripitaka Android application.",
+    "remarks": null
+  },
+  {
+    "id": "AST-600",
+    "type": "url",
+    "folder": "external",
+    "path": "https://australiaawardsbangladesh.org/stories/joytu-khisha/",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "Australia Awards Bangladesh — Feature Story",
+    "description": "Feature story about Joytu's AusAID scholarship and DART robotics research.",
+    "remarks": null
+  },
+  {
+    "id": "AST-601",
+    "type": "url",
+    "folder": "external",
+    "path": "https://www.tbsnews.net/economy/corporates/jgtdsl-introduces-mobile-gas-leak-detection-system-294769",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-021"
+    ],
+    "time_range": "2021-08-29",
+    "caption": "TBS News — JGTDSL MobileGuard Launch",
+    "description": "News article about the ABB Ability Mobile Gas Leak Detection System inauguration by JGTDSL.",
+    "remarks": null
+  },
+  {
+    "id": "AST-602",
+    "type": "url",
+    "folder": "external",
+    "path": "https://www.facebook.com/AusHCBangladesh/posts/-australiaawards-scholar-joytu-khisha-from-bangladesh-is-pursuing-his-lifelong-d/1047006520798809/",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-014"
+    ],
+    "time_range": "2023–2024",
+    "caption": "Australian High Commission Bangladesh — Facebook Post",
+    "description": "AusHC Bangladesh Facebook post featuring Joytu's Australia Awards scholarship.",
+    "remarks": null
+  },
+  {
+    "id": "AST-603",
+    "type": "url",
+    "folder": "external",
+    "path": "https://doi.org/10.1109/ICAR.2017.8023638",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-009"
+    ],
+    "time_range": "2017",
+    "caption": "IEEE DOI — Speech Responsive Robot (ICAR 2017)",
+    "description": "IEEE DOI for published paper on speech-responsive robot, ICAR 2017, Hong Kong.",
+    "remarks": null
+  },
+  {
+    "id": "AST-604",
+    "type": "url",
+    "folder": "external",
+    "path": "https://doi.org/10.1007/978-3-319-67074-4_30",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-008"
+    ],
+    "time_range": "2017",
+    "caption": "Springer DOI — Watershed Model (ICCCI 2017)",
+    "description": "Springer DOI for published paper on Watershed cluster detection, ICCCI 2017, Nicosia.",
+    "remarks": null
+  },
+  {
+    "id": "AST-605",
+    "type": "url",
+    "folder": "external",
+    "path": "https://play.google.com/store/apps/details?id=com.joytukhisha99.ptptv1",
+    "asset_extsn": "url",
+    "project_fids": [
+      "PROJ-012"
+    ],
+    "time_range": "2017–present",
+    "caption": "Google Play Store — Bengali Tripitaka App",
+    "description": "Play Store listing for the Bengali Tripitaka app (com.joytukhisha99.ptptv1).",
+    "remarks": null
+  },
+  {
+    "id": "AST-065",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/20190724_161740.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-24",
+    "caption": "Pidilite Chemical Plant — site video 1",
+    "description": "On-site video at Pidilite chemical plant, Bhaluka, Jul 24, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-066",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/20190724_164733.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-24",
+    "caption": "Pidilite Chemical Plant — site video 2",
+    "description": "Second on-site video at Pidilite chemical plant, Bhaluka, Jul 24, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-067",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/20190728_195842.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-28",
+    "caption": "Pidilite Chemical Plant — site video 3",
+    "description": "On-site video at Pidilite chemical plant, Bhaluka, Jul 28, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-517",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190728_195826.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-28",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 28, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-518",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190730_214343.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-30",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (2)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 30, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-519",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190731_132346.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-31",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (3)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 31, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-520",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190731_132403.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-31",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (4)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 31, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-521",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190731_132405_0.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-31",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (5)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 31, 2019. Source: 20190731_132405(0).jpg.",
+    "remarks": "Filename (0) variant — renamed to 20190731_132405_0.webp"
+  },
+  {
+    "id": "AST-522",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190731_132405.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-31",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (6)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 31, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-523",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190731_132443.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-07-31",
+    "caption": "Pidilite Chemical Plant — field photo Jul 2019 (7)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Jul 31, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-524",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190820_200658.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-08-20",
+    "caption": "Pidilite Chemical Plant — field photo Aug 2019",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Aug 20, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-525",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190821_091754.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-08-21",
+    "caption": "Pidilite Chemical Plant — field photo Aug 2019 (2)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Aug 21, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-526",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/20190821_095706.webp",
+    "asset_extsn": "webp",
+    "project_fids": [
+      "PROJ-020"
+    ],
+    "time_range": "2019-08-21",
+    "caption": "Pidilite Chemical Plant — field photo Aug 2019 (3)",
+    "description": "On-site photo at Pidilite chemical plant, Bhaluka, Aug 21, 2019.",
+    "remarks": null
+  },
+  {
+    "id": "AST-527",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/300-1.jpg",
+    "asset_extsn": "jpg",
+    "project_fids": [
+      "PROJ-018"
+    ],
+    "time_range": null,
+    "caption": "Mirsharai Economic Zone — photo 1",
+    "description": "Photo for 200 MMSCFD CGS & 50 MMSCFD HP-DRS — Mirsharai Economic Zone project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-528",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/300-2.jpg",
+    "asset_extsn": "jpg",
+    "project_fids": [
+      "PROJ-018"
+    ],
+    "time_range": null,
+    "caption": "Mirsharai Economic Zone — photo 2",
+    "description": "Photo for 200 MMSCFD CGS & 50 MMSCFD HP-DRS — Mirsharai Economic Zone project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-529",
+    "type": "image",
+    "folder": "images",
+    "path": "assets/images/300-3.jpg",
+    "asset_extsn": "jpg",
+    "project_fids": [
+      "PROJ-018"
+    ],
+    "time_range": null,
+    "caption": "Mirsharai Economic Zone — photo 3",
+    "description": "Photo for 200 MMSCFD CGS & 50 MMSCFD HP-DRS — Mirsharai Economic Zone project.",
+    "remarks": null
+  },
+  {
+    "id": "AST-530",
+    "type": "video",
+    "folder": "videos",
+    "path": "assets/videos/Recording 2026-03-07 220310_compressed.mp4",
+    "asset_extsn": "mp4",
+    "project_fids": [
+      "PROJ-025"
+    ],
+    "time_range": "2026-03-07",
+    "caption": "Warehouse Management System — demo recording",
+    "description": "Screen recording demo of the Warehouse Management System — AI Barcode Detection project.",
+    "remarks": null
+  }
+]
