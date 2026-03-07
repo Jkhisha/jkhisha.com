@@ -1,220 +1,5 @@
 [
   {
-    "id": "PROJ-001",
-    "title": "Dress Mirror",
-    "description": "A junior member of my university club came to me with the idea for an AR virtual dress try-on system and asked for my help building it. At the time I was Joint Secretary and R&D Head of NSUCEC at NSU, so I stepped in as technical co-developer. Together we built a working prototype where a user stands in front of a camera and sees a real-time dress overlay on their upper body — the system detects posture and maps the clothing to fit the person's silhouette. The hardest part was making body and face recognition work reliably in real time; AR as a concept was barely emerging and doing person detection at that fidelity was genuinely difficult with the tools available. We pitched the prototype to fashion brands for potential commercialisation as an in-store or online try-on solution. They showed interest but the deal stalled over an investment requirement of around 10 lakh BDT that we couldn't secure as students. At the time, only two companies in the world had built anything comparable. The project has been on hold since.",
-    "employer": "Personal",
-    "my_role": "Co-developer (with Tahmina Sultana) — computer vision pipeline, AR overlay",
-    "project_type": "Personal",
-    "status": "Incomplete — On Halt",
-    "tech_stack": [
-      "OpenCV",
-      "Python"
-    ],
-    "period": "Mar 2016 – May 2016",
-    "tags": [
-      "Computer Vision",
-      "Python",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-002",
-    "title": "Lunasphere",
-    "description": "Lunasphere is a cross-platform cooperative platformer I built solo. The story is one I hold close — in this world, fireflies eat apples for survival, but the main character, a firefly, falls in love with an apple. They can never truly be together because light and dark cannot coexist in the same place. But a prophecy speaks of Lunas Mountain, where a firefly can gain the power to withstand light. The two set out on a journey there — one that no one has ever survived. The game has cooperative mechanics where the firefly and apple each have opposing energy requirements (one needs darkness, the other sunlight) and must solve obstacles together. I got the idea, the story, and a partial implementation done before the project was put on hold. It remains unfinished — one of those projects I genuinely want to return to someday.",
-    "employer": "Personal",
-    "my_role": "Sole Developer",
-    "project_type": "Personal",
-    "status": "On Halt",
-    "tech_stack": [
-      "Unity3D",
-      "C#"
-    ],
-    "period": "2016",
-    "tags": [
-      "Game Dev",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-004",
-    "title": "Jump-man PC",
-    "description": "I love C++ — it gives you full control and it's the fastest language available. Back in 2015 I wanted to make a 2D game entirely in raw C++ because Unreal Engine was still only stable for 3D. I used the Allegro graphics library to build Jump-man — a simple PC game where you jump to score points, similar in mechanic to Flappy Bird. The game concept was secondary; the real goal was writing a game engine in raw C++ with a library and no polish from a modern engine. I was genuinely ready to build my own 2D C++ engine from scratch. Then Unreal released their 2D game support. Life is hard.",
-    "employer": "Personal",
-    "my_role": "Sole Developer",
-    "project_type": "Personal",
-    "status": "Complete",
-    "tech_stack": [
-      "C++",
-      "Allegro Library"
-    ],
-    "period": "Jan 2015",
-    "tags": [
-      "Game Dev",
-      "C++",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-005",
-    "title": "Spider-bot",
-    "description": "Making a Bluetooth remote-controlled car was so common at university that I decided to build a spider instead. Six servo legs, Arduino microcontroller, and a custom Android controller app I wrote in Android Studio for Bluetooth communication. All hardware hand-built — no kits. The spider form factor was the whole point.",
-    "employer": "Personal",
-    "my_role": "Sole Developer (hardware + software)",
-    "project_type": "Personal",
-    "status": "Complete",
-    "tech_stack": [
-      "Arduino",
-      "Android Studio",
-      "Java",
-      "Bluetooth"
-    ],
-    "period": "2015",
-    "tags": [
-      "Embedded / Hardware",
-      "Java",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-006",
-    "title": "Remote Controlled Car",
-    "description": "I built so many remote-controlled cars over the years that I genuinely can't remember the exact number. All Arduino-based with Bluetooth, controlled by custom Android apps I wrote in Android Studio. The ones documented here are the iterations I happened to keep a photo log of — each was an improvement on the last in hardware quality and control response.",
-    "employer": "Personal",
-    "my_role": "Sole Developer (hardware + software)",
-    "project_type": "Personal",
-    "status": "Complete",
-    "tech_stack": [
-      "Arduino",
-      "Android Studio",
-      "Java",
-      "Bluetooth"
-    ],
-    "period": "2015",
-    "tags": [
-      "Embedded / Hardware",
-      "Java",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-007",
-    "title": "Posture Detection",
-    "description": "Most posture detection research at the time used expensive machine learning pipelines or infrared cameras — one notable study used a Markov Model with infrared sensors which had good accuracy but was costly and inaccessible. I wanted to do 3D posture estimation from a standard 2D colour camera only. The pipeline first uses Haar Cascade to detect face position and size, then a conditional tree algorithm estimates all body part positions in 3D space and renders a stickman output. The application I kept thinking about: animation. Instead of manually posing 3D characters in software, an animator could act in front of a camera and have every movement captured directly. Same logic applies to CGI — with a skin-colour-exclusion background, you could extract human posture from any scene. The project is incomplete and still open for further research.",
-    "employer": "Personal",
-    "my_role": "Researcher & Developer",
-    "project_type": "Personal",
-    "status": "Incomplete",
-    "tech_stack": [
-      "Python",
-      "OpenCV",
-      "Haar Cascade"
-    ],
-    "period": "2017",
-    "tags": [
-      "Computer Vision",
-      "Research",
-      "Python",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-008",
-    "title": "Watershed Model for Cluster Detection",
-    "description": "Watershed had been used extensively in image processing for region detection but was largely ignored for data mining. The question we asked: what if we modified it for clustering? The key challenge in Watershed is finding the most distinct peaks — we solved this by applying a multivariate Gaussian filter to the image plot of the dataset, then added dimensionality reduction with automatic association to handle high-dimensional data. We tested it on homicide data to identify geographically murder-prone zones. Results: outperformed K-means, matched DBSCAN at lower computational cost, and partially solved DBSCAN's known weakness with varying-density clusters. Published at ICCCI 2017, Nicosia.",
-    "employer": "North South University",
-    "my_role": "Co-researcher & Developer",
-    "project_type": "Personal",
-    "status": "Complete — Published",
-    "tech_stack": [
-      "MATLAB",
-      "Python"
-    ],
-    "period": "2016–2017",
-    "publication": "ICCCI 2017, Nicosia, Cyprus — DOI: 10.1007/978-3-319-67074-4_30",
-    "tags": [
-      "AI / ML",
-      "Research",
-      "Python",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-009",
-    "title": "Speech Responsive Mobile Robot",
-    "description": "One of my favourite research builds. A mobile robot with a mechanical gripper that transports objects by responding to verbal commands. We defined 15 commands — anything outside those 15 is simply ignored. The robot classifies objects into six stiffness categories and applies only the gripping force needed, so it won't crush soft items. The speech pipeline runs on an Android app using Google Speech Recognition, converting voice to a character array sent over Bluetooth to the Arduino microcontroller. The intended application was accessibility — people with disability or limited mobility being able to move objects around by speaking. Built largely from salvaged motors. Published at ICAR 2017, Hong Kong.",
-    "employer": "North South University",
-    "my_role": "Co-researcher & Lead Developer",
-    "project_type": "Personal",
-    "status": "Complete — Published",
-    "tech_stack": [
-      "Arduino",
-      "Android Studio",
-      "Java",
-      "Google Speech Recognition API",
-      "Bluetooth"
-    ],
-    "period": "2016–2017",
-    "publication": "ICAR 2017, Hong Kong — DOI: 10.1109/ICAR.2017.8023638",
-    "tags": [
-      "Robotics",
-      "Embedded / Hardware",
-      "Research",
-      "Java",
-      "Personal"
-    ]
-  },
-  {
-    "id": "PROJ-012",
-    "title": "Bengali Tripitaka Android Application",
-    "description": "The first digital Bengali-language edition of the complete Buddhist Tripitaka scripture — 60 books, each over 1,000 pages, fully searchable on Android for the first time in Bengali. I built the entire application solo: Java and Android Studio with SQLite for the text database. Features include full-text search across all 60 volumes, bookmarking, personal note-taking, and multiple colour themes. Contracted by Tripitak Publishing Society and developed over two years alongside my other work. The app reached 10,000+ active users with a 4.8-star rating on Google Play Store.",
-    "employer": "Tripitak Publishing Society",
-    "my_role": "Sole Developer",
-    "project_type": "Professional",
-    "status": "Complete — Live on Play Store",
-    "tech_stack": [
-      "Java",
-      "Android Studio",
-      "SQLite"
-    ],
-    "period": "May 2017 – Mar 2019",
-    "links": {
-      "playstore": "https://play.google.com/store/apps/details?id=com.joytukhisha99.ptptv1",
-      "youtube": "https://youtu.be/jBN9oDP1Vfg"
-    },
-    "tags": [
-      "Mobile",
-      "Java",
-      "Professional"
-    ]
-  },
-  {
-    "id": "PROJ-013",
-    "title": "Inventory Management System",
-    "description": "Developed a full-stack inventory management system as the sole developer — the company needed it and I built it end-to-end. Node.js and MongoDB on the backend, vanilla JavaScript on the frontend. Covers inventory tracking, stock movement, and reporting.",
-    "employer": "Personal",
-    "my_role": "Full-Stack Developer (sole developer)",
-    "project_type": "Professional",
-    "status": "Complete",
-    "tech_stack": [
-      "Node.js",
-      "MongoDB",
-      "Vanilla JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "period": "2020–2022",
-    "links": {
-      "youtube": "https://youtu.be/-rcxRJMF2xs"
-    },
-    "tags": [
-      "Web Dev",
-      "Node.js",
-      "MongoDB",
-      "Professional"
-    ]
-  },
-  {
     "id": "PROJ-014",
     "title": "DART — Humanoid Robot Platform",
     "description": "Full humanoid robotic platform for real-time human motion mimicry, voice control, and object detection. Dual 7-DOF RealMan RM75 collaborative arms, mobile AGV base, 2-DOF servo head, dexterous hands, Intel RealSense RGB-D camera. Perception pipeline uses MediaPipe Pose (33 landmarks) with custom geometric cosine-similarity matching against pre-recorded pose database. Voice control via OpenAI Whisper (offline ASR) with 23-command vocabulary and difflib fuzzy matching. Object detection via YOLOv8x-WorldV2 with runtime class switching. RL component uses PPO (Stable Baselines3) trained in Gazebo. All subsystems integrated under ROS1. Supervised by Dr. Feras Dayoub at AIML, University of Adelaide. Featured on Jamuna TV and Australia Awards Bangladesh.",
@@ -254,36 +39,6 @@
       "Computer Vision",
       "Research",
       "Python",
-      "Professional"
-    ]
-  },
-  {
-    "id": "PROJ-015",
-    "title": "Grameenphone Tower Surveillance Platform",
-    "description": "After Zicom, I joined Rantech Engineering and built their flagship product: a nationwide IoT surveillance platform for approximately 12,000 Grameenphone mobile towers across Bangladesh. The problem it solves is real — UPS battery theft is widespread at remote towers, and equipment faults go undetected for days because there's no eyes on site. I built the entire software stack solo: real-time Google Maps dashboard showing live status for every tower, ONVIF IP camera integration for per-tower CCTV, PIR motion detection with alarm logging, door intrusion sensors, remote siren activation, and a contact database linking each tower to local police and the building owner. Only event-triggered recording — no continuous storage at this scale. Phase 1 covered 700 towers. Client was Grameenphone via i4see Technology as system integrator.",
-    "employer": "Rantech Engineering",
-    "my_role": "Sole Software Developer",
-    "project_type": "Professional",
-    "status": "Complete",
-    "tech_stack": [
-      "Node.js",
-      "MongoDB",
-      "Google Maps API",
-      "ONVIF",
-      "GPIO",
-      "4G SIM",
-      "JavaScript"
-    ],
-    "period": "Mar 2022 – Sep 2022",
-    "links": {
-      "youtube_demo1": "https://youtu.be/hlg_i7pxFvM",
-      "youtube_demo2": "https://youtu.be/ARqTvFkvVEk"
-    },
-    "tags": [
-      "Web Dev",
-      "Node.js",
-      "IoT",
-      "MongoDB",
       "Professional"
     ]
   },
@@ -443,6 +198,75 @@
     ]
   },
   {
+    "id": "PROJ-029",
+    "title": "Hot Tapping — Live Pipeline Connection",
+    "description": "Hot tapping is one of the riskiest operations in the gas industry — branching a live connection off an active high-pressure pipeline without shutting down the gas flow. A calculation error or hardware failure at pressure means a gas release or worse. I was on-site with the Zicom team for this operation at a live Bangladesh gas pipeline in January 2021.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "Jan 2021",
+    "tags": [
+      "Gas Industry",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-015",
+    "title": "Grameenphone Tower Surveillance Platform",
+    "description": "After Zicom, I joined Rantech Engineering and built their flagship product: a nationwide IoT surveillance platform for approximately 12,000 Grameenphone mobile towers across Bangladesh. The problem it solves is real — UPS battery theft is widespread at remote towers, and equipment faults go undetected for days because there's no eyes on site. I built the entire software stack solo: real-time Google Maps dashboard showing live status for every tower, ONVIF IP camera integration for per-tower CCTV, PIR motion detection with alarm logging, door intrusion sensors, remote siren activation, and a contact database linking each tower to local police and the building owner. Only event-triggered recording — no continuous storage at this scale. Phase 1 covered 700 towers. Client was Grameenphone via i4see Technology as system integrator.",
+    "employer": "Rantech Engineering",
+    "my_role": "Sole Software Developer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Node.js",
+      "MongoDB",
+      "Google Maps API",
+      "ONVIF",
+      "GPIO",
+      "4G SIM",
+      "JavaScript"
+    ],
+    "period": "Mar 2022 – Sep 2022",
+    "links": {
+      "youtube_demo1": "https://youtu.be/hlg_i7pxFvM",
+      "youtube_demo2": "https://youtu.be/ARqTvFkvVEk"
+    },
+    "tags": [
+      "Web Dev",
+      "Node.js",
+      "IoT",
+      "MongoDB",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-012",
+    "title": "Bengali Tripitaka Android Application",
+    "description": "The first digital Bengali-language edition of the complete Buddhist Tripitaka scripture — 60 books, each over 1,000 pages, fully searchable on Android for the first time in Bengali. I built the entire application solo: Java and Android Studio with SQLite for the text database. Features include full-text search across all 60 volumes, bookmarking, personal note-taking, and multiple colour themes. Contracted by Tripitak Publishing Society and developed over two years alongside my other work. The app reached 10,000+ active users with a 4.8-star rating on Google Play Store.",
+    "employer": "Tripitak Publishing Society",
+    "my_role": "Sole Developer",
+    "project_type": "Professional",
+    "status": "Complete — Live on Play Store",
+    "tech_stack": [
+      "Java",
+      "Android Studio",
+      "SQLite"
+    ],
+    "period": "May 2017 – Mar 2019",
+    "links": {
+      "playstore": "https://play.google.com/store/apps/details?id=com.joytukhisha99.ptptv1",
+      "youtube": "https://youtu.be/jBN9oDP1Vfg"
+    },
+    "tags": [
+      "Mobile",
+      "Java",
+      "Professional"
+    ]
+  },
+  {
     "id": "PROJ-023",
     "title": "Bangla OCR Pipeline",
     "description": "Contributing to the development of a Bengali OCR pipeline at Orogenic Resources, focused on automated text extraction from Bengali-language documents — primarily in the banking and financial sector. The pipeline is actively under development.",
@@ -457,22 +281,6 @@
     "tags": [
       "AI / ML",
       "Python",
-      "Professional"
-    ]
-  },
-  {
-    "id": "PROJ-024",
-    "title": "DocuWare Enterprise Document Management Implementation",
-    "description": "Part of a team implementing DocuWare enterprise document management solutions for clients across multiple industries including the banking sector. Work covers document capture workflow configuration, archiving rule setup, and retrieval indexing. Ongoing professional engagement at Orogenic Resources.",
-    "employer": "Orogenic Resources Bangladesh Limited",
-    "my_role": "Implementation Engineer",
-    "project_type": "Professional",
-    "status": "Ongoing",
-    "tech_stack": [
-      "DocuWare"
-    ],
-    "period": "May 2025 – Present",
-    "tags": [
       "Professional"
     ]
   },
@@ -502,20 +310,209 @@
     ]
   },
   {
-    "id": "PROJ-026",
-    "title": "Orbital Remedies — Space Debris Hackathon",
-    "description": "Team entry in the Space Debris category at the AuSpace Society hackathon at the University of Adelaide — we won. The concept: Orbital Remedies, tagline 'Curing Kessler, One Salvage at a Time.' Our solution was a Low Earth Orbit satellite platform equipped with a 5 kW laser capable of altering the orbit of debris pieces to capture them and transport them to a docked space station. Less valuable debris gets nudged into Earth's atmosphere to burn up. At the space station, a biochemical chamber performs biomining using Thiobacillus Thiooxidans — a bacterium that produces sulfuric acid, corroding metallic debris while extracting recoverable metals (iron, copper, gold, silver) as tradeable raw materials. The business model turns space junk into a revenue stream. Market analysis showed 128M+ potential copper debris pieces, 1M+ aluminium, and 36,500 iron in trackable orbits. We presented a full business plan with timeline, cost estimate (~$200M), and proposed partners including Neumann Space, the ISS, the Australian Space Agency, and Saber Astronautics. Winning the competition earned the team two industry visit prizes: Silentium Defence (Oculus Observatory) and KPMG. Team: Samuel Jimmy, Will Bennett, Ethan Harrison, and Joytu Khisha.",
+    "id": "PROJ-024",
+    "title": "DocuWare Enterprise Document Management Implementation",
+    "description": "Part of a team implementing DocuWare enterprise document management solutions for clients across multiple industries including the banking sector. Work covers document capture workflow configuration, archiving rule setup, and retrieval indexing. Ongoing professional engagement at Orogenic Resources.",
+    "employer": "Orogenic Resources Bangladesh Limited",
+    "my_role": "Implementation Engineer",
+    "project_type": "Professional",
+    "status": "Ongoing",
+    "tech_stack": [
+      "DocuWare"
+    ],
+    "period": "May 2025 – Present",
+    "tags": [
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-013",
+    "title": "Inventory Management System",
+    "description": "Developed a full-stack inventory management system as the sole developer — the company needed it and I built it end-to-end. Node.js and MongoDB on the backend, vanilla JavaScript on the frontend. Covers inventory tracking, stock movement, and reporting.",
     "employer": "Personal",
-    "my_role": "Team Member",
-    "project_type": "Personal",
-    "status": "Complete — Winner (Space Debris category)",
-    "tech_stack": [],
-    "period": "Jul 2023",
+    "my_role": "Full-Stack Developer (sole developer)",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Node.js",
+      "MongoDB",
+      "Vanilla JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "period": "2020–2022",
     "links": {
-      "organiser": "https://www.auspacesociety.com.au/news"
+      "youtube": "https://youtu.be/-rcxRJMF2xs"
     },
     "tags": [
-      "Space",
+      "Web Dev",
+      "Node.js",
+      "MongoDB",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-008",
+    "title": "Watershed Model for Cluster Detection",
+    "description": "Watershed had been used extensively in image processing for region detection but was largely ignored for data mining. The question we asked: what if we modified it for clustering? The key challenge in Watershed is finding the most distinct peaks — we solved this by applying a multivariate Gaussian filter to the image plot of the dataset, then added dimensionality reduction with automatic association to handle high-dimensional data. We tested it on homicide data to identify geographically murder-prone zones. Results: outperformed K-means, matched DBSCAN at lower computational cost, and partially solved DBSCAN's known weakness with varying-density clusters. Published at ICCCI 2017, Nicosia.",
+    "employer": "North South University",
+    "my_role": "Co-researcher & Developer",
+    "project_type": "Personal",
+    "status": "Complete — Published",
+    "tech_stack": [
+      "MATLAB",
+      "Python"
+    ],
+    "period": "2016–2017",
+    "publication": "ICCCI 2017, Nicosia, Cyprus — DOI: 10.1007/978-3-319-67074-4_30",
+    "tags": [
+      "AI / ML",
+      "Research",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-009",
+    "title": "Speech Responsive Mobile Robot",
+    "description": "One of my favourite research builds. A mobile robot with a mechanical gripper that transports objects by responding to verbal commands. We defined 15 commands — anything outside those 15 is simply ignored. The robot classifies objects into six stiffness categories and applies only the gripping force needed, so it won't crush soft items. The speech pipeline runs on an Android app using Google Speech Recognition, converting voice to a character array sent over Bluetooth to the Arduino microcontroller. The intended application was accessibility — people with disability or limited mobility being able to move objects around by speaking. Built largely from salvaged motors. Published at ICAR 2017, Hong Kong.",
+    "employer": "North South University",
+    "my_role": "Co-researcher & Lead Developer",
+    "project_type": "Personal",
+    "status": "Complete — Published",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Google Speech Recognition API",
+      "Bluetooth"
+    ],
+    "period": "2016–2017",
+    "publication": "ICAR 2017, Hong Kong — DOI: 10.1109/ICAR.2017.8023638",
+    "tags": [
+      "Robotics",
+      "Embedded / Hardware",
+      "Research",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-001",
+    "title": "Dress Mirror",
+    "description": "A junior member of my university club came to me with the idea for an AR virtual dress try-on system and asked for my help building it. At the time I was Joint Secretary and R&D Head of NSUCEC at NSU, so I stepped in as technical co-developer. Together we built a working prototype where a user stands in front of a camera and sees a real-time dress overlay on their upper body — the system detects posture and maps the clothing to fit the person's silhouette. The hardest part was making body and face recognition work reliably in real time; AR as a concept was barely emerging and doing person detection at that fidelity was genuinely difficult with the tools available. We pitched the prototype to fashion brands for potential commercialisation as an in-store or online try-on solution. They showed interest but the deal stalled over an investment requirement of around 10 lakh BDT that we couldn't secure as students. At the time, only two companies in the world had built anything comparable. The project has been on hold since.",
+    "employer": "Personal",
+    "my_role": "Co-developer (with Tahmina Sultana) — computer vision pipeline, AR overlay",
+    "project_type": "Personal",
+    "status": "Incomplete — On Halt",
+    "tech_stack": [
+      "OpenCV",
+      "Python"
+    ],
+    "period": "Mar 2016 – May 2016",
+    "tags": [
+      "Computer Vision",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-007",
+    "title": "Posture Detection",
+    "description": "Most posture detection research at the time used expensive machine learning pipelines or infrared cameras — one notable study used a Markov Model with infrared sensors which had good accuracy but was costly and inaccessible. I wanted to do 3D posture estimation from a standard 2D colour camera only. The pipeline first uses Haar Cascade to detect face position and size, then a conditional tree algorithm estimates all body part positions in 3D space and renders a stickman output. The application I kept thinking about: animation. Instead of manually posing 3D characters in software, an animator could act in front of a camera and have every movement captured directly. Same logic applies to CGI — with a skin-colour-exclusion background, you could extract human posture from any scene. The project is incomplete and still open for further research.",
+    "employer": "Personal",
+    "my_role": "Researcher & Developer",
+    "project_type": "Personal",
+    "status": "Incomplete",
+    "tech_stack": [
+      "Python",
+      "OpenCV",
+      "Haar Cascade"
+    ],
+    "period": "2017",
+    "tags": [
+      "Computer Vision",
+      "Research",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-005",
+    "title": "Spider-bot",
+    "description": "Making a Bluetooth remote-controlled car was so common at university that I decided to build a spider instead. Six servo legs, Arduino microcontroller, and a custom Android controller app I wrote in Android Studio for Bluetooth communication. All hardware hand-built — no kits. The spider form factor was the whole point.",
+    "employer": "Personal",
+    "my_role": "Sole Developer (hardware + software)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Bluetooth"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-006",
+    "title": "Remote Controlled Car",
+    "description": "I built so many remote-controlled cars over the years that I genuinely can't remember the exact number. All Arduino-based with Bluetooth, controlled by custom Android apps I wrote in Android Studio. The ones documented here are the iterations I happened to keep a photo log of — each was an improvement on the last in hardware quality and control response.",
+    "employer": "Personal",
+    "my_role": "Sole Developer (hardware + software)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Bluetooth"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-030",
+    "title": "CUET Robot Competition — Arduino RF Motor Control",
+    "description": "Inter-university robotics competition hosted by CUET. I built an Arduino-based robot with RF wireless motor control — no Bluetooth, raw RF for the control link — and took it to compete against other university teams. Participated as an NSU undergraduate.",
+    "employer": "Chittagong University of Engineering and Technology (CUET) — competition host",
+    "my_role": "Participant / Developer",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "RF Communication"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-004",
+    "title": "Jump-man PC",
+    "description": "I love C++ — it gives you full control and it's the fastest language available. Back in 2015 I wanted to make a 2D game entirely in raw C++ because Unreal Engine was still only stable for 3D. I used the Allegro graphics library to build Jump-man — a simple PC game where you jump to score points, similar in mechanic to Flappy Bird. The game concept was secondary; the real goal was writing a game engine in raw C++ with a library and no polish from a modern engine. I was genuinely ready to build my own 2D C++ engine from scratch. Then Unreal released their 2D game support. Life is hard.",
+    "employer": "Personal",
+    "my_role": "Sole Developer",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "C++",
+      "Allegro Library"
+    ],
+    "period": "Jan 2015",
+    "tags": [
+      "Game Dev",
+      "C++",
       "Personal"
     ]
   },
@@ -540,53 +537,38 @@
     ]
   },
   {
-    "id": "PROJ-028",
-    "title": "NSUCEC Mechatronics Workshop",
-    "description": "As Joint Secretary and R&D Head of NSUCEC (NSU Computer Engineering Club), I organised and ran a hands-on microcontroller and robot control workshop for club members in September 2014. The goal was to get students building and controlling actual hardware — covering embedded systems fundamentals, Arduino programming, and basic robot control. Teaching people to build the things I was passionate about.",
-    "employer": "North South University (NSUCEC — NSU Computer Engineering Club)",
-    "my_role": "Workshop Instructor, R&D Head, Joint Secretary",
+    "id": "PROJ-002",
+    "title": "Lunasphere",
+    "description": "Lunasphere is a cross-platform cooperative platformer I built solo. The story is one I hold close — in this world, fireflies eat apples for survival, but the main character, a firefly, falls in love with an apple. They can never truly be together because light and dark cannot coexist in the same place. But a prophecy speaks of Lunas Mountain, where a firefly can gain the power to withstand light. The two set out on a journey there — one that no one has ever survived. The game has cooperative mechanics where the firefly and apple each have opposing energy requirements (one needs darkness, the other sunlight) and must solve obstacles together. I got the idea, the story, and a partial implementation done before the project was put on hold. It remains unfinished — one of those projects I genuinely want to return to someday.",
+    "employer": "Personal",
+    "my_role": "Sole Developer",
     "project_type": "Personal",
-    "status": "Complete",
+    "status": "On Halt",
     "tech_stack": [
-      "Arduino",
-      "Microcontrollers"
+      "Unity3D",
+      "C#"
     ],
-    "period": "Sep 2014",
+    "period": "2016",
     "tags": [
-      "Embedded / Hardware",
+      "Game Dev",
       "Personal"
     ]
   },
   {
-    "id": "PROJ-029",
-    "title": "Hot Tapping — Live Pipeline Connection",
-    "description": "Hot tapping is one of the riskiest operations in the gas industry — branching a live connection off an active high-pressure pipeline without shutting down the gas flow. A calculation error or hardware failure at pressure means a gas release or worse. I was on-site with the Zicom team for this operation at a live Bangladesh gas pipeline in January 2021.",
-    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
-    "my_role": "I&C Engineer",
-    "project_type": "Professional",
-    "status": "Complete",
-    "tech_stack": [],
-    "period": "Jan 2021",
-    "tags": [
-      "Gas Industry",
-      "Professional"
-    ]
-  },
-  {
-    "id": "PROJ-030",
-    "title": "CUET Robot Competition — Arduino RF Motor Control",
-    "description": "Inter-university robotics competition hosted by CUET. I built an Arduino-based robot with RF wireless motor control — no Bluetooth, raw RF for the control link — and took it to compete against other university teams. Participated as an NSU undergraduate.",
-    "employer": "Chittagong University of Engineering and Technology (CUET) — competition host",
-    "my_role": "Participant / Developer",
+    "id": "PROJ-026",
+    "title": "Orbital Remedies — Space Debris Hackathon",
+    "description": "Team entry in the Space Debris category at the AuSpace Society hackathon at the University of Adelaide — we won. The concept: Orbital Remedies, tagline 'Curing Kessler, One Salvage at a Time.' Our solution was a Low Earth Orbit satellite platform equipped with a 5 kW laser capable of altering the orbit of debris pieces to capture them and transport them to a docked space station. Less valuable debris gets nudged into Earth's atmosphere to burn up. At the space station, a biochemical chamber performs biomining using Thiobacillus Thiooxidans — a bacterium that produces sulfuric acid, corroding metallic debris while extracting recoverable metals (iron, copper, gold, silver) as tradeable raw materials. The business model turns space junk into a revenue stream. Market analysis showed 128M+ potential copper debris pieces, 1M+ aluminium, and 36,500 iron in trackable orbits. We presented a full business plan with timeline, cost estimate (~$200M), and proposed partners including Neumann Space, the ISS, the Australian Space Agency, and Saber Astronautics. Winning the competition earned the team two industry visit prizes: Silentium Defence (Oculus Observatory) and KPMG. Team: Samuel Jimmy, Will Bennett, Ethan Harrison, and Joytu Khisha.",
+    "employer": "Personal",
+    "my_role": "Team Member",
     "project_type": "Personal",
-    "status": "Complete",
-    "tech_stack": [
-      "Arduino",
-      "RF Communication"
-    ],
-    "period": "2015",
+    "status": "Complete — Winner (Space Debris category)",
+    "tech_stack": [],
+    "period": "Jul 2023",
+    "links": {
+      "organiser": "https://www.auspacesociety.com.au/news"
+    },
     "tags": [
-      "Embedded / Hardware",
+      "Space",
       "Personal"
     ]
   },
@@ -609,20 +591,6 @@
     ]
   },
   {
-    "id": "PROJ-033",
-    "title": "Papers",
-    "description": "A collection of certificates, competition recognitions, and workshop participations accumulated over the years — small tokens from the journey.",
-    "employer": "Personal",
-    "my_role": "Recipient",
-    "project_type": "Personal",
-    "status": "Complete",
-    "tech_stack": [],
-    "period": "2013 – Present",
-    "tags": [
-      "Personal"
-    ]
-  },
-  {
     "id": "PROJ-032",
     "title": "KPMG Industry Visit",
     "description": "The second prize from winning the Orbital Remedies space hackathon was an industry visit to KPMG. Engaged with KPMG professionals in the context of the space sector — the business, investment, and advisory side of an industry that is usually all engineering from the inside.",
@@ -634,6 +602,38 @@
     "period": "Nov 2023",
     "tags": [
       "Space",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-028",
+    "title": "NSUCEC Mechatronics Workshop",
+    "description": "As Joint Secretary and R&D Head of NSUCEC (NSU Computer Engineering Club), I organised and ran a hands-on microcontroller and robot control workshop for club members in September 2014. The goal was to get students building and controlling actual hardware — covering embedded systems fundamentals, Arduino programming, and basic robot control. Teaching people to build the things I was passionate about.",
+    "employer": "North South University (NSUCEC — NSU Computer Engineering Club)",
+    "my_role": "Workshop Instructor, R&D Head, Joint Secretary",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Microcontrollers"
+    ],
+    "period": "Sep 2014",
+    "tags": [
+      "Embedded / Hardware",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-033",
+    "title": "Papers",
+    "description": "A collection of certificates, competition recognitions, and workshop participations accumulated over the years — small tokens from the journey.",
+    "employer": "Personal",
+    "my_role": "Recipient",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "2013 – Present",
+    "tags": [
       "Personal"
     ]
   }

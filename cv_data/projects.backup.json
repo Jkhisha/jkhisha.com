@@ -1,0 +1,640 @@
+[
+  {
+    "id": "PROJ-001",
+    "title": "Dress Mirror",
+    "description": "A junior member of my university club came to me with the idea for an AR virtual dress try-on system and asked for my help building it. At the time I was Joint Secretary and R&D Head of NSUCEC at NSU, so I stepped in as technical co-developer. Together we built a working prototype where a user stands in front of a camera and sees a real-time dress overlay on their upper body — the system detects posture and maps the clothing to fit the person's silhouette. The hardest part was making body and face recognition work reliably in real time; AR as a concept was barely emerging and doing person detection at that fidelity was genuinely difficult with the tools available. We pitched the prototype to fashion brands for potential commercialisation as an in-store or online try-on solution. They showed interest but the deal stalled over an investment requirement of around 10 lakh BDT that we couldn't secure as students. At the time, only two companies in the world had built anything comparable. The project has been on hold since.",
+    "employer": "Personal",
+    "my_role": "Co-developer (with Tahmina Sultana) — computer vision pipeline, AR overlay",
+    "project_type": "Personal",
+    "status": "Incomplete — On Halt",
+    "tech_stack": [
+      "OpenCV",
+      "Python"
+    ],
+    "period": "Mar 2016 – May 2016",
+    "tags": [
+      "Computer Vision",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-002",
+    "title": "Lunasphere",
+    "description": "Lunasphere is a cross-platform cooperative platformer I built solo. The story is one I hold close — in this world, fireflies eat apples for survival, but the main character, a firefly, falls in love with an apple. They can never truly be together because light and dark cannot coexist in the same place. But a prophecy speaks of Lunas Mountain, where a firefly can gain the power to withstand light. The two set out on a journey there — one that no one has ever survived. The game has cooperative mechanics where the firefly and apple each have opposing energy requirements (one needs darkness, the other sunlight) and must solve obstacles together. I got the idea, the story, and a partial implementation done before the project was put on hold. It remains unfinished — one of those projects I genuinely want to return to someday.",
+    "employer": "Personal",
+    "my_role": "Sole Developer",
+    "project_type": "Personal",
+    "status": "On Halt",
+    "tech_stack": [
+      "Unity3D",
+      "C#"
+    ],
+    "period": "2016",
+    "tags": [
+      "Game Dev",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-004",
+    "title": "Jump-man PC",
+    "description": "I love C++ — it gives you full control and it's the fastest language available. Back in 2015 I wanted to make a 2D game entirely in raw C++ because Unreal Engine was still only stable for 3D. I used the Allegro graphics library to build Jump-man — a simple PC game where you jump to score points, similar in mechanic to Flappy Bird. The game concept was secondary; the real goal was writing a game engine in raw C++ with a library and no polish from a modern engine. I was genuinely ready to build my own 2D C++ engine from scratch. Then Unreal released their 2D game support. Life is hard.",
+    "employer": "Personal",
+    "my_role": "Sole Developer",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "C++",
+      "Allegro Library"
+    ],
+    "period": "Jan 2015",
+    "tags": [
+      "Game Dev",
+      "C++",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-005",
+    "title": "Spider-bot",
+    "description": "Making a Bluetooth remote-controlled car was so common at university that I decided to build a spider instead. Six servo legs, Arduino microcontroller, and a custom Android controller app I wrote in Android Studio for Bluetooth communication. All hardware hand-built — no kits. The spider form factor was the whole point.",
+    "employer": "Personal",
+    "my_role": "Sole Developer (hardware + software)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Bluetooth"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-006",
+    "title": "Remote Controlled Car",
+    "description": "I built so many remote-controlled cars over the years that I genuinely can't remember the exact number. All Arduino-based with Bluetooth, controlled by custom Android apps I wrote in Android Studio. The ones documented here are the iterations I happened to keep a photo log of — each was an improvement on the last in hardware quality and control response.",
+    "employer": "Personal",
+    "my_role": "Sole Developer (hardware + software)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Bluetooth"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-007",
+    "title": "Posture Detection",
+    "description": "Most posture detection research at the time used expensive machine learning pipelines or infrared cameras — one notable study used a Markov Model with infrared sensors which had good accuracy but was costly and inaccessible. I wanted to do 3D posture estimation from a standard 2D colour camera only. The pipeline first uses Haar Cascade to detect face position and size, then a conditional tree algorithm estimates all body part positions in 3D space and renders a stickman output. The application I kept thinking about: animation. Instead of manually posing 3D characters in software, an animator could act in front of a camera and have every movement captured directly. Same logic applies to CGI — with a skin-colour-exclusion background, you could extract human posture from any scene. The project is incomplete and still open for further research.",
+    "employer": "Personal",
+    "my_role": "Researcher & Developer",
+    "project_type": "Personal",
+    "status": "Incomplete",
+    "tech_stack": [
+      "Python",
+      "OpenCV",
+      "Haar Cascade"
+    ],
+    "period": "2017",
+    "tags": [
+      "Computer Vision",
+      "Research",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-008",
+    "title": "Watershed Model for Cluster Detection",
+    "description": "Watershed had been used extensively in image processing for region detection but was largely ignored for data mining. The question we asked: what if we modified it for clustering? The key challenge in Watershed is finding the most distinct peaks — we solved this by applying a multivariate Gaussian filter to the image plot of the dataset, then added dimensionality reduction with automatic association to handle high-dimensional data. We tested it on homicide data to identify geographically murder-prone zones. Results: outperformed K-means, matched DBSCAN at lower computational cost, and partially solved DBSCAN's known weakness with varying-density clusters. Published at ICCCI 2017, Nicosia.",
+    "employer": "North South University",
+    "my_role": "Co-researcher & Developer",
+    "project_type": "Personal",
+    "status": "Complete — Published",
+    "tech_stack": [
+      "MATLAB",
+      "Python"
+    ],
+    "period": "2016–2017",
+    "publication": "ICCCI 2017, Nicosia, Cyprus — DOI: 10.1007/978-3-319-67074-4_30",
+    "tags": [
+      "AI / ML",
+      "Research",
+      "Python",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-009",
+    "title": "Speech Responsive Mobile Robot",
+    "description": "One of my favourite research builds. A mobile robot with a mechanical gripper that transports objects by responding to verbal commands. We defined 15 commands — anything outside those 15 is simply ignored. The robot classifies objects into six stiffness categories and applies only the gripping force needed, so it won't crush soft items. The speech pipeline runs on an Android app using Google Speech Recognition, converting voice to a character array sent over Bluetooth to the Arduino microcontroller. The intended application was accessibility — people with disability or limited mobility being able to move objects around by speaking. Built largely from salvaged motors. Published at ICAR 2017, Hong Kong.",
+    "employer": "North South University",
+    "my_role": "Co-researcher & Lead Developer",
+    "project_type": "Personal",
+    "status": "Complete — Published",
+    "tech_stack": [
+      "Arduino",
+      "Android Studio",
+      "Java",
+      "Google Speech Recognition API",
+      "Bluetooth"
+    ],
+    "period": "2016–2017",
+    "publication": "ICAR 2017, Hong Kong — DOI: 10.1109/ICAR.2017.8023638",
+    "tags": [
+      "Robotics",
+      "Embedded / Hardware",
+      "Research",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-012",
+    "title": "Bengali Tripitaka Android Application",
+    "description": "The first digital Bengali-language edition of the complete Buddhist Tripitaka scripture — 60 books, each over 1,000 pages, fully searchable on Android for the first time in Bengali. I built the entire application solo: Java and Android Studio with SQLite for the text database. Features include full-text search across all 60 volumes, bookmarking, personal note-taking, and multiple colour themes. Contracted by Tripitak Publishing Society and developed over two years alongside my other work. The app reached 10,000+ active users with a 4.8-star rating on Google Play Store.",
+    "employer": "Tripitak Publishing Society",
+    "my_role": "Sole Developer",
+    "project_type": "Professional",
+    "status": "Complete — Live on Play Store",
+    "tech_stack": [
+      "Java",
+      "Android Studio",
+      "SQLite"
+    ],
+    "period": "May 2017 – Mar 2019",
+    "links": {
+      "playstore": "https://play.google.com/store/apps/details?id=com.joytukhisha99.ptptv1",
+      "youtube": "https://youtu.be/jBN9oDP1Vfg"
+    },
+    "tags": [
+      "Mobile",
+      "Java",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-013",
+    "title": "Inventory Management System",
+    "description": "Developed a full-stack inventory management system as the sole developer — the company needed it and I built it end-to-end. Node.js and MongoDB on the backend, vanilla JavaScript on the frontend. Covers inventory tracking, stock movement, and reporting.",
+    "employer": "Personal",
+    "my_role": "Full-Stack Developer (sole developer)",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Node.js",
+      "MongoDB",
+      "Vanilla JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "period": "2020–2022",
+    "links": {
+      "youtube": "https://youtu.be/-rcxRJMF2xs"
+    },
+    "tags": [
+      "Web Dev",
+      "Node.js",
+      "MongoDB",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-014",
+    "title": "DART — Humanoid Robot Platform",
+    "description": "Full humanoid robotic platform for real-time human motion mimicry, voice control, and object detection. Dual 7-DOF RealMan RM75 collaborative arms, mobile AGV base, 2-DOF servo head, dexterous hands, Intel RealSense RGB-D camera. Perception pipeline uses MediaPipe Pose (33 landmarks) with custom geometric cosine-similarity matching against pre-recorded pose database. Voice control via OpenAI Whisper (offline ASR) with 23-command vocabulary and difflib fuzzy matching. Object detection via YOLOv8x-WorldV2 with runtime class switching. RL component uses PPO (Stable Baselines3) trained in Gazebo. All subsystems integrated under ROS1. Supervised by Dr. Feras Dayoub at AIML, University of Adelaide. Featured on Jamuna TV and Australia Awards Bangladesh.",
+    "employer": "Australian Institute for Machine Learning (AIML), University of Adelaide",
+    "my_role": "Lead Researcher & Developer (MSc Capstone)",
+    "project_type": "Professional",
+    "status": "Complete (sim-to-real RL transfer ongoing)",
+    "tech_stack": [
+      "Python",
+      "ROS1",
+      "OpenAI Whisper",
+      "MediaPipe",
+      "OpenCV",
+      "YOLOv8x-WorldV2",
+      "PyTorch",
+      "Stable Baselines3",
+      "MoveIt!",
+      "RealMan RM75 SDK",
+      "Intel RealSense SDK",
+      "Gazebo",
+      "RViz",
+      "PyAudio",
+      "NumPy"
+    ],
+    "period": "Jan 2023 – Dec 2024",
+    "links": {
+      "demo": "https://youtu.be/LWE2oWngUGU",
+      "perception": "https://youtu.be/UcY72P1Cr3o",
+      "rl_manipulation": "https://youtube.com/shorts/dJYg_jFyXGc",
+      "university_feature": "https://youtu.be/VnZd97txaXw",
+      "jamuna_tv": "https://youtu.be/Q5s9ATJvwXU?t=67",
+      "australia_awards": "https://australiaawardsbangladesh.org/stories/joytu-khisha/"
+    },
+    "tags": [
+      "Robotics",
+      "AI / ML",
+      "Computer Vision",
+      "Research",
+      "Python",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-015",
+    "title": "Grameenphone Tower Surveillance Platform",
+    "description": "After Zicom, I joined Rantech Engineering and built their flagship product: a nationwide IoT surveillance platform for approximately 12,000 Grameenphone mobile towers across Bangladesh. The problem it solves is real — UPS battery theft is widespread at remote towers, and equipment faults go undetected for days because there's no eyes on site. I built the entire software stack solo: real-time Google Maps dashboard showing live status for every tower, ONVIF IP camera integration for per-tower CCTV, PIR motion detection with alarm logging, door intrusion sensors, remote siren activation, and a contact database linking each tower to local police and the building owner. Only event-triggered recording — no continuous storage at this scale. Phase 1 covered 700 towers. Client was Grameenphone via i4see Technology as system integrator.",
+    "employer": "Rantech Engineering",
+    "my_role": "Sole Software Developer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Node.js",
+      "MongoDB",
+      "Google Maps API",
+      "ONVIF",
+      "GPIO",
+      "4G SIM",
+      "JavaScript"
+    ],
+    "period": "Mar 2022 – Sep 2022",
+    "links": {
+      "youtube_demo1": "https://youtu.be/hlg_i7pxFvM",
+      "youtube_demo2": "https://youtu.be/ARqTvFkvVEk"
+    },
+    "tags": [
+      "Web Dev",
+      "Node.js",
+      "IoT",
+      "MongoDB",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-016",
+    "title": "KSRM Gas R&MS — 50 MMSCFD TBS / 30 MMSCFD CMS / R&MS",
+    "description": "Industrial automation wasn't where I intended to spend my career — it was a calculated step, a way to keep building engineering depth while waiting for the right moment to return to robotics. KSRM became the project that defined my Zicom years. I was solely responsible for the entire I&C design, Honeywell ControlEdge PLC software development, HMI design, and commissioning of ABB Totalflow flow computers and NGC8206 gas chromatograph for custody transfer metering — across a 50 MMSCFD Town Border Station, 30 MMSCFD City Metering Station, and Regulating & Metering Station in Sitakunda, Chattogram. This scope — full I&C design, PLC programming, HMI, and commissioning combined — is work normally contracted out to foreign specialists. I did it alone. The system has been fully operational since 2021.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Design, PLC Programmer (sole developer), HMI Developer, Commissioning Engineer",
+    "project_type": "Professional",
+    "status": "Complete — Operational since 2021",
+    "tech_stack": [
+      "Honeywell ControlEdge PLC",
+      "HMI Software",
+      "ABB Totalflow Flow Computer",
+      "ABB NGC8206 Gas Chromatograph"
+    ],
+    "period": "2019–2021",
+    "client": "KSRM Power Plant Ltd., Bangladesh",
+    "links": {
+      "youtube": "https://youtu.be/pVTxT52LO-E"
+    },
+    "tags": [
+      "PLC/DCS/SCADA",
+      "ABB / Honeywell",
+      "Gas Industry",
+      "Gas Chromatograph",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-017",
+    "title": "Wellhead Compressor Project — Titas Gas Field & Narsingdi Gas Field",
+    "description": "Greenfield wellhead compressor installation at Titas and Narsingdi gas fields. My main contribution was the integration layer — designing and implementing the Modbus RTU/TCP communication bridge between the FW Murphy / Allen Bradley CompactLogix compressor PLC and the site ABB System 800xA DCS, making two systems that weren't designed to talk to each other work together reliably. Co-developed the 800xA SCADA application for compressor monitoring and control, co-designed HMI screens, and commissioned HART field instruments on site.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Commissioning Engineer, ABB 800xA SCADA Co-developer, Modbus Integration Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "ABB System 800xA",
+      "Allen Bradley CompactLogix PLC",
+      "Modbus RTU",
+      "Modbus TCP",
+      "HART"
+    ],
+    "period": "2019–2021",
+    "client": "Bangladesh Gas Fields Company Limited (BGFCL)",
+    "tags": [
+      "PLC/DCS/SCADA",
+      "ABB / Honeywell",
+      "Gas Industry",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-018",
+    "title": "200 MMSCFD CGS & 50 MMSCFD HP-DRS — Mirsharai Economic Zone",
+    "description": "Commissioning at GTCL's City Gate Station and HP Distribution & Regulating Station in Mirsharai Economic Zone — ABB Totalflow XFC/XRC flow computers and NGC8206 gas chromatographs for fiscal metering at 200 MMSCFD capacity. Covered pressure regulation commissioning, full loop checking, instrument calibration, and site acceptance testing.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Commissioning Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "ABB Totalflow XFC/XRC",
+      "ABB NGC8206",
+      "HART"
+    ],
+    "period": "Apr 2019 – Feb 2020",
+    "client": "Gas Transmission Company Limited (GTCL), Bangladesh",
+    "tags": [
+      "PLC/DCS/SCADA",
+      "ABB / Honeywell",
+      "Gas Industry",
+      "Gas Chromatograph",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-019",
+    "title": "Summit Bibiyana Power Plant — Regulating & Metering Station (R&MS)",
+    "description": "Two faults on arrival, both resolved. The Allen Bradley SCADA system was completely non-operational when I got to site — I diagnosed the fault and fully restored it. The second was the Water Bath Heater: it was tripping on every startup due to a communication misalignment buried in the WBH control system. I traced it, corrected the misalignment, and the WBH returned to normal service. Also commissioned the ABB NGC8206 gas chromatograph and Totalflow flow computer for custody transfer metering.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "SCADA Recovery Engineer, Fault Diagnosis, Commissioning Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Allen Bradley / Rockwell Automation SCADA",
+      "ABB NGC8206",
+      "ABB Totalflow"
+    ],
+    "period": "2021",
+    "client": "Summit Bibiyana Power Plant, Habiganj",
+    "tags": [
+      "PLC/DCS/SCADA",
+      "ABB / Honeywell",
+      "Gas Industry",
+      "Gas Chromatograph",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-020",
+    "title": "Pidilite Chemical Plant — Bhaluka",
+    "description": "Commissioning of approximately 200 control loops on Honeywell Experion PKS DCS at Pidilite's chemical plant in Bhaluka. Full loop checking, instrument calibration, and DCS tag configuration across pressure transmitters, flow meters, and level instruments. Provided startup support and modified DCS control code in the field as required during live commissioning.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Commissioning Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Honeywell Experion PKS DCS"
+    ],
+    "period": "Dec 2019 – Jan 2020",
+    "client": "Pidilite Bangladesh",
+    "tags": [
+      "PLC/DCS/SCADA",
+      "ABB / Honeywell",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-021",
+    "title": "ABB Ability Mobile Gas Leak Detection System (MobileGuard) — Sylhet",
+    "description": "ABB's vehicle-mounted laser-based mobile gas leak detection system — commissioned for JGTDSL's pipeline network in Sylhet. I handled the full on-site setup: hardware installation, software calibration, and data output pipeline integration. Then went out on active surveillance surveys of the Sylhet gas distribution network with the deployed system. Formally inaugurated on 29 August 2021 at Mendibagh Gas Bhavan — Bangladesh's first deployment of this technology for pipeline monitoring.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "Commissioning Engineer (hardware + software)",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "ABB Ability Mobile Gas Leak Detection System"
+    ],
+    "period": "2021",
+    "client": "Jalalabad Gas Transmission and Distribution System Limited (JGTDSL), Sylhet",
+    "links": {
+      "news": "https://www.tbsnews.net/economy/corporates/jgtdsl-introduces-mobile-gas-leak-detection-system-294769"
+    },
+    "tags": [
+      "ABB / Honeywell",
+      "Gas Industry",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-022",
+    "title": "60 MMSCFD TEG Dehydration Natural Gas Process Plant — BAPEX",
+    "description": "Design and pre-commissioning work on a 60 MMSCFD Triethylene Glycol (TEG) natural gas dehydration plant for BAPEX — instrument inspection, control drawing design, and instrumentation documentation. I was involved during the engineering phase. I left Zicom before the project reached commissioning, so this one documents the design contribution only.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "Pre-commissioning I&C Engineer",
+    "project_type": "Professional",
+    "status": "Incomplete — Left during design phase",
+    "tech_stack": [],
+    "period": "2021",
+    "client": "Bangladesh Petroleum Exploration & Production Co. Ltd (BAPEX)",
+    "tags": [
+      "PLC/DCS/SCADA",
+      "Gas Industry",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-023",
+    "title": "Bangla OCR Pipeline",
+    "description": "Contributing to the development of a Bengali OCR pipeline at Orogenic Resources, focused on automated text extraction from Bengali-language documents — primarily in the banking and financial sector. The pipeline is actively under development.",
+    "employer": "Orogenic Resources Bangladesh Limited",
+    "my_role": "Developer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "Python"
+    ],
+    "period": "May 2025 – Present",
+    "tags": [
+      "AI / ML",
+      "Python",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-024",
+    "title": "DocuWare Enterprise Document Management Implementation",
+    "description": "Part of a team implementing DocuWare enterprise document management solutions for clients across multiple industries including the banking sector. Work covers document capture workflow configuration, archiving rule setup, and retrieval indexing. Ongoing professional engagement at Orogenic Resources.",
+    "employer": "Orogenic Resources Bangladesh Limited",
+    "my_role": "Implementation Engineer",
+    "project_type": "Professional",
+    "status": "Ongoing",
+    "tech_stack": [
+      "DocuWare"
+    ],
+    "period": "May 2025 – Present",
+    "tags": [
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-025",
+    "title": "Warehouse Management System — AI Barcode Detection",
+    "description": "Solely developed a full-stack warehouse management system with AI-powered barcode detection. Built end-to-end: React frontend, FastAPI backend, PostgreSQL database. Camera-captured images are processed through AI and OCR pipelines to simultaneously record large quantities of barcodes — replacing manual scanning for high-volume inventory operations.",
+    "employer": "Orogenic Resources Bangladesh Limited",
+    "my_role": "Developer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "Python",
+      "OpenCV"
+    ],
+    "period": "May 2025 – Present",
+    "tags": [
+      "Web Dev",
+      "React",
+      "AI / ML",
+      "PostgreSQL",
+      "Python",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-026",
+    "title": "Orbital Remedies — Space Debris Hackathon",
+    "description": "Team entry in the Space Debris category at the AuSpace Society hackathon at the University of Adelaide — we won. The concept: Orbital Remedies, tagline 'Curing Kessler, One Salvage at a Time.' Our solution was a Low Earth Orbit satellite platform equipped with a 5 kW laser capable of altering the orbit of debris pieces to capture them and transport them to a docked space station. Less valuable debris gets nudged into Earth's atmosphere to burn up. At the space station, a biochemical chamber performs biomining using Thiobacillus Thiooxidans — a bacterium that produces sulfuric acid, corroding metallic debris while extracting recoverable metals (iron, copper, gold, silver) as tradeable raw materials. The business model turns space junk into a revenue stream. Market analysis showed 128M+ potential copper debris pieces, 1M+ aluminium, and 36,500 iron in trackable orbits. We presented a full business plan with timeline, cost estimate (~$200M), and proposed partners including Neumann Space, the ISS, the Australian Space Agency, and Saber Astronautics. Winning the competition earned the team two industry visit prizes: Silentium Defence (Oculus Observatory) and KPMG. Team: Samuel Jimmy, Will Bennett, Ethan Harrison, and Joytu Khisha.",
+    "employer": "Personal",
+    "my_role": "Team Member",
+    "project_type": "Personal",
+    "status": "Complete — Winner (Space Debris category)",
+    "tech_stack": [],
+    "period": "Jul 2023",
+    "links": {
+      "organiser": "https://www.auspacesociety.com.au/news"
+    },
+    "tags": [
+      "Space",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-027",
+    "title": "Java Fighting Game",
+    "description": "Single-player 2D side-scrolling fighting game inspired by classic arcade fighters like Mortal Kombat. Built as a coursework project during NSU undergraduate period using Java Swing applet with the Slick2D game library for rendering and game loop management.",
+    "employer": "Personal",
+    "my_role": "Co-developer",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Java",
+      "Java Swing",
+      "Slick2D"
+    ],
+    "period": "Sep 2013",
+    "tags": [
+      "Game Dev",
+      "Java",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-028",
+    "title": "NSUCEC Mechatronics Workshop",
+    "description": "As Joint Secretary and R&D Head of NSUCEC (NSU Computer Engineering Club), I organised and ran a hands-on microcontroller and robot control workshop for club members in September 2014. The goal was to get students building and controlling actual hardware — covering embedded systems fundamentals, Arduino programming, and basic robot control. Teaching people to build the things I was passionate about.",
+    "employer": "North South University (NSUCEC — NSU Computer Engineering Club)",
+    "my_role": "Workshop Instructor, R&D Head, Joint Secretary",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "Microcontrollers"
+    ],
+    "period": "Sep 2014",
+    "tags": [
+      "Embedded / Hardware",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-029",
+    "title": "Hot Tapping — Live Pipeline Connection",
+    "description": "Hot tapping is one of the riskiest operations in the gas industry — branching a live connection off an active high-pressure pipeline without shutting down the gas flow. A calculation error or hardware failure at pressure means a gas release or worse. I was on-site with the Zicom team for this operation at a live Bangladesh gas pipeline in January 2021.",
+    "employer": "Zicom Equipment Bangladesh PTE Ltd.",
+    "my_role": "I&C Engineer",
+    "project_type": "Professional",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "Jan 2021",
+    "tags": [
+      "Gas Industry",
+      "Professional"
+    ]
+  },
+  {
+    "id": "PROJ-030",
+    "title": "CUET Robot Competition — Arduino RF Motor Control",
+    "description": "Inter-university robotics competition hosted by CUET. I built an Arduino-based robot with RF wireless motor control — no Bluetooth, raw RF for the control link — and took it to compete against other university teams. Participated as an NSU undergraduate.",
+    "employer": "Chittagong University of Engineering and Technology (CUET) — competition host",
+    "my_role": "Participant / Developer",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [
+      "Arduino",
+      "RF Communication"
+    ],
+    "period": "2015",
+    "tags": [
+      "Embedded / Hardware",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-031",
+    "title": "Silentium Defence — Oculus Observatory Industry Visit",
+    "description": "Winning the Orbital Remedies space hackathon came with two prizes — one of them was a visit to Silentium Defence's Oculus Observatory in Swan Reach, South Australia. Silentium Defence is an Australian defence technology company specialising in passive radar and electronic warfare. The Oculus Observatory is a world-first commercial-scale Space Situational Awareness (SSA) facility using the MAVERICK S passive radar system — it tracks objects in orbit using reflected FM radio waves rather than active transmission, which means it's completely covert from the target's perspective. We got a site visit and technical briefing on the SSA radar system. Standing in the middle of an active radar facility that watches space debris and satellites passively was something I won't forget.",
+    "employer": "Personal",
+    "my_role": "Industry Visitor (prize from Orbital Remedies hackathon win)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "Nov 2023",
+    "links": {
+      "silentium": "https://www.silentiumdefence.com.au/oculus-observatory-set-to-disrupt-space-situational-awareness-globally/"
+    },
+    "tags": [
+      "Space",
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-033",
+    "title": "Papers",
+    "description": "A collection of certificates, competition recognitions, and workshop participations accumulated over the years — small tokens from the journey.",
+    "employer": "Personal",
+    "my_role": "Recipient",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "2013 – Present",
+    "tags": [
+      "Personal"
+    ]
+  },
+  {
+    "id": "PROJ-032",
+    "title": "KPMG Industry Visit",
+    "description": "The second prize from winning the Orbital Remedies space hackathon was an industry visit to KPMG. Engaged with KPMG professionals in the context of the space sector — the business, investment, and advisory side of an industry that is usually all engineering from the inside.",
+    "employer": "Personal",
+    "my_role": "Industry Visitor (prize from Orbital Remedies hackathon win)",
+    "project_type": "Personal",
+    "status": "Complete",
+    "tech_stack": [],
+    "period": "Nov 2023",
+    "tags": [
+      "Space",
+      "Personal"
+    ]
+  }
+]
