@@ -112,29 +112,8 @@ lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLigh
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeLightbox(); closeProjectModal(); } });
 
 /* ── PROJECT MODAL ── */
-function toYouTubeEmbed(url) {
-  const match = url.match(/(?:youtu\.be\/|[?&]v=|shorts\/)([^?&\s]+)/);
-  return match ? `https://www.youtube-nocookie.com/embed/${match[1]}?rel=0` : null;
-}
-
-function buildModalGallery(proj, assets) {
-  const items = [];
-  (assets || []).forEach(a => {
-    items.push({ type: a.type, src: a.path, caption: a.caption || '' });
-  });
-  const l = proj.links || {};
-  const ytMap = {
-    demo: 'Demo', youtube: 'Video', youtube_demo1: 'Demo 1',
-    youtube_demo2: 'Demo 2', perception: 'Pipeline', rl_manipulation: 'RL Demo',
-    university_feature: 'Feature', jamuna_tv: 'TV Feature'
-  };
-  Object.entries(ytMap).forEach(([key, label]) => {
-    if (l[key]) {
-      const embed = toYouTubeEmbed(l[key]);
-      if (embed) items.push({ type: 'youtube', src: embed, caption: label });
-    }
-  });
-  return items;
+function buildModalGallery(assets) {
+  return (assets || []).map(a => ({ type: a.type, src: a.path, caption: a.caption || '' }));
 }
 
 let _modalGallery = [];
@@ -145,7 +124,7 @@ function openProjectModal(projId) {
   if (!entry) return;
   const { proj, assets } = entry;
 
-  _modalGallery = buildModalGallery(proj, assets);
+  _modalGallery = buildModalGallery(assets);
   _activeIdx = 0;
 
   document.querySelector('.pm-meta').textContent =
@@ -164,11 +143,19 @@ function openProjectModal(projId) {
 
   const l = proj.links || {};
   const extLinks = [];
-  if (l.playstore)        extLinks.push(`<a href="${l.playstore}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-google-play"></i> Play Store</a>`);
-  if (l.news)             extLinks.push(`<a href="${l.news}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-newspaper"></i> News</a>`);
-  if (l.silentium)        extLinks.push(`<a href="${l.silentium}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> About</a>`);
-  if (l.organiser)        extLinks.push(`<a href="${l.organiser}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Organiser</a>`);
-  if (l.australia_awards) extLinks.push(`<a href="${l.australia_awards}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Feature Story</a>`);
+  if (l.demo)              extLinks.push(`<a href="${l.demo}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Demo</a>`);
+  if (l.youtube)           extLinks.push(`<a href="${l.youtube}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Video</a>`);
+  if (l.youtube_demo1)     extLinks.push(`<a href="${l.youtube_demo1}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Demo 1</a>`);
+  if (l.youtube_demo2)     extLinks.push(`<a href="${l.youtube_demo2}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Demo 2</a>`);
+  if (l.perception)        extLinks.push(`<a href="${l.perception}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Pipeline</a>`);
+  if (l.rl_manipulation)   extLinks.push(`<a href="${l.rl_manipulation}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> RL Demo</a>`);
+  if (l.university_feature)extLinks.push(`<a href="${l.university_feature}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-youtube"></i> Feature</a>`);
+  if (l.jamuna_tv)         extLinks.push(`<a href="${l.jamuna_tv}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-tv"></i> TV Feature</a>`);
+  if (l.playstore)         extLinks.push(`<a href="${l.playstore}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-google-play"></i> Play Store</a>`);
+  if (l.news)              extLinks.push(`<a href="${l.news}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-newspaper"></i> News</a>`);
+  if (l.silentium)         extLinks.push(`<a href="${l.silentium}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> About</a>`);
+  if (l.organiser)         extLinks.push(`<a href="${l.organiser}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Organiser</a>`);
+  if (l.australia_awards)  extLinks.push(`<a href="${l.australia_awards}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Feature Story</a>`);
   document.querySelector('.pm-links').innerHTML = extLinks.join('');
 
   renderModalThumbs();
@@ -447,6 +434,14 @@ async function init() {
   initFadeIn();
   renderSkills();
   renderCerts();
+
+  // Horizontal scroll on mousewheel for gallery thumb strip
+  const thumbStrip = document.querySelector('.pm-thumbs');
+  if (thumbStrip) {
+    thumbStrip.addEventListener('wheel', e => {
+      if (e.deltaY !== 0) { e.preventDefault(); thumbStrip.scrollLeft += e.deltaY; }
+    }, { passive: false });
+  }
 
   // Load projects + assets
   try {
