@@ -172,12 +172,6 @@ function renderModalThumbs() {
   if (!_modalGallery.length) { strip.innerHTML = ''; return; }
 
   strip.innerHTML = _modalGallery.map((item, i) => {
-    if (item.type === 'youtube') {
-      return `<div class="pm-thumb pm-thumb-yt ${i === 0 ? 'active' : ''}" onclick="setModalViewer(${i})">
-        <i class="fa-brands fa-youtube"></i>
-        <span>${item.caption}</span>
-      </div>`;
-    }
     if (item.type === 'video') {
       return `<div class="pm-thumb pm-thumb-vid ${i === 0 ? 'active' : ''}" onclick="setModalViewer(${i})">
         <i class="fa-solid fa-play"></i>
@@ -206,10 +200,6 @@ function setModalViewer(idx) {
     viewer.innerHTML = `<video controls>
       <source src="${item.src}" type="video/mp4">
     </video>`;
-  } else if (item.type === 'youtube') {
-    viewer.innerHTML = `<iframe src="${item.src}" allowfullscreen
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-    </iframe>`;
   }
 }
 
