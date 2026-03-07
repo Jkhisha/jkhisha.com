@@ -1,6 +1,11 @@
 'use strict';
 
 /* ─────────────────────────────────────────────
+   PROJECT STORE — id → { proj, assets }
+───────────────────────────────────────────── */
+const PROJECT_STORE = {};
+
+/* ─────────────────────────────────────────────
    THUMBNAIL MAP — project id → image path
 ───────────────────────────────────────────── */
 const THUMBNAILS = {
@@ -104,7 +109,132 @@ function closeLightbox() {
 }
 document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeLightbox(); closeProjectModal(); } });
+
+/* ── PROJECT MODAL ── */
+function toYouTubeEmbed(url) {
+  const match = url.match(/(?:youtu\.be\/|[?&]v=|shorts\/)([^?&\s]+)/);
+  return match ? `https://www.youtube.com/embed/${match[1]}?rel=0` : null;
+}
+
+function buildModalGallery(proj, assets) {
+  const items = [];
+  (assets || []).forEach(a => {
+    items.push({ type: a.type, src: a.path, caption: a.caption || '' });
+  });
+  const l = proj.links || {};
+  const ytMap = {
+    demo: 'Demo', youtube: 'Video', youtube_demo1: 'Demo 1',
+    youtube_demo2: 'Demo 2', perception: 'Pipeline', rl_manipulation: 'RL Demo',
+    university_feature: 'Feature', jamuna_tv: 'TV Feature'
+  };
+  Object.entries(ytMap).forEach(([key, label]) => {
+    if (l[key]) {
+      const embed = toYouTubeEmbed(l[key]);
+      if (embed) items.push({ type: 'youtube', src: embed, caption: label });
+    }
+  });
+  return items;
+}
+
+let _modalGallery = [];
+let _activeIdx = 0;
+
+function openProjectModal(projId) {
+  const entry = PROJECT_STORE[projId];
+  if (!entry) return;
+  const { proj, assets } = entry;
+
+  _modalGallery = buildModalGallery(proj, assets);
+  _activeIdx = 0;
+
+  document.querySelector('.pm-meta').textContent =
+    [proj.employer, proj.period].filter(Boolean).join(' · ');
+  document.querySelector('.pm-title').textContent = proj.title;
+  document.querySelector('.pm-role').textContent = proj.my_role || '';
+  document.querySelector('.pm-status').textContent = proj.status || '';
+  document.querySelector('.pm-desc').textContent = proj.description || '';
+
+  const tags = (proj.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+  document.querySelector('.pm-tags').innerHTML = tags;
+
+  const tech = (proj.tech_stack || []).map(t => `<span class="tag">${t}</span>`).join('');
+  document.querySelector('.pm-tech').innerHTML = tech
+    ? `<div class="pm-section-label">Stack</div>${tech}` : '';
+
+  const l = proj.links || {};
+  const extLinks = [];
+  if (l.playstore)        extLinks.push(`<a href="${l.playstore}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-brands fa-google-play"></i> Play Store</a>`);
+  if (l.news)             extLinks.push(`<a href="${l.news}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-newspaper"></i> News</a>`);
+  if (l.silentium)        extLinks.push(`<a href="${l.silentium}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> About</a>`);
+  if (l.organiser)        extLinks.push(`<a href="${l.organiser}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Organiser</a>`);
+  if (l.australia_awards) extLinks.push(`<a href="${l.australia_awards}" target="_blank" rel="noopener" class="pm-extlink"><i class="fa-solid fa-globe"></i> Feature Story</a>`);
+  document.querySelector('.pm-links').innerHTML = extLinks.join('');
+
+  renderModalThumbs();
+  setModalViewer(0);
+
+  const modal = document.getElementById('proj-modal');
+  modal.classList.add('active');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function renderModalThumbs() {
+  const strip = document.querySelector('.pm-thumbs');
+  if (!_modalGallery.length) { strip.innerHTML = ''; return; }
+
+  strip.innerHTML = _modalGallery.map((item, i) => {
+    if (item.type === 'youtube') {
+      return `<div class="pm-thumb pm-thumb-yt ${i === 0 ? 'active' : ''}" onclick="setModalViewer(${i})">
+        <i class="fa-brands fa-youtube"></i>
+        <span>${item.caption}</span>
+      </div>`;
+    }
+    if (item.type === 'video') {
+      return `<div class="pm-thumb pm-thumb-vid ${i === 0 ? 'active' : ''}" onclick="setModalViewer(${i})">
+        <i class="fa-solid fa-play"></i>
+        <span>${item.caption || 'Video'}</span>
+      </div>`;
+    }
+    return `<img class="pm-thumb ${i === 0 ? 'active' : ''}" src="${item.src}"
+               alt="${item.caption}" loading="lazy" onclick="setModalViewer(${i})">`;
+  }).join('');
+}
+
+function setModalViewer(idx) {
+  _activeIdx = idx;
+  const item = _modalGallery[idx];
+  const viewer = document.querySelector('.pm-viewer');
+
+  document.querySelectorAll('.pm-thumb').forEach((t, i) => {
+    t.classList.toggle('active', i === idx);
+  });
+
+  if (!item) { viewer.innerHTML = ''; return; }
+
+  if (item.type === 'image') {
+    viewer.innerHTML = `<img src="${item.src}" alt="${item.caption}">`;
+  } else if (item.type === 'video') {
+    viewer.innerHTML = `<video controls>
+      <source src="${item.src}" type="video/mp4">
+    </video>`;
+  } else if (item.type === 'youtube') {
+    viewer.innerHTML = `<iframe src="${item.src}" allowfullscreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>`;
+  }
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById('proj-modal');
+  if (!modal) return;
+  modal.classList.remove('active');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  const viewer = document.querySelector('.pm-viewer');
+  if (viewer) viewer.innerHTML = '';
+}
 
 /* ─────────────────────────────────────────────
    NAVBAR — scroll behaviour + mobile menu
@@ -242,7 +372,7 @@ function buildProjectLinks(proj) {
   `).join('');
 }
 
-function buildProjectCard(proj) {
+function buildProjectCard(proj, assetsByProject) {
   const thumb  = THUMBNAILS[proj.id];
   const year   = getPeriodYear(proj.period);
   const tags   = (proj.tags || []).slice(0, 5);
@@ -265,7 +395,7 @@ function buildProjectCard(proj) {
     : '';
 
   return `
-    <div class="project-card" data-tags='${JSON.stringify(proj.tags || [])}'>
+    <div class="project-card" data-tags='${JSON.stringify(proj.tags || [])}' onclick="openProjectModal('${proj.id}')" style="cursor:pointer">
       ${thumbHTML}
       <div class="project-info">
         ${year ? `<div class="project-year">${year}</div>` : ''}
@@ -278,7 +408,7 @@ function buildProjectCard(proj) {
   `;
 }
 
-function renderProjects(projects) {
+function renderProjects(projects, assetsByProject) {
   const grid = document.getElementById('projects-grid');
   if (!grid) return;
 
@@ -287,7 +417,7 @@ function renderProjects(projects) {
     return;
   }
 
-  grid.innerHTML = projects.map(buildProjectCard).join('');
+  grid.innerHTML = projects.map(p => buildProjectCard(p, assetsByProject)).join('');
 }
 
 function filterProjects(filter, allProjects) {
@@ -295,14 +425,14 @@ function filterProjects(filter, allProjects) {
   return allProjects.filter(p => (p.tags || []).includes(filter));
 }
 
-function initFilters(allProjects) {
+function initFilters(allProjects, assetsByProject) {
   const tabs = document.querySelectorAll('.filter-tab');
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       const filter = tab.dataset.filter;
-      renderProjects(filterProjects(filter, allProjects));
+      renderProjects(filterProjects(filter, allProjects), assetsByProject);
     });
   });
 }
@@ -317,13 +447,31 @@ async function init() {
   renderSkills();
   renderCerts();
 
-  // Load projects from JSON
+  // Load projects + assets
   try {
-    const res = await fetch('cv_data/projects.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const projects = await res.json();
-    renderProjects(projects);
-    initFilters(projects);
+    const [projRes, astRes] = await Promise.all([
+      fetch('cv_data/projects.json'),
+      fetch('cv_data/assets.json')
+    ]);
+    if (!projRes.ok) throw new Error(`HTTP ${projRes.status}`);
+    const projects = await projRes.json();
+    const assets   = astRes.ok ? await astRes.json() : [];
+
+    const assetsByProject = {};
+    assets.forEach(a => {
+      if (!a.project_fids || a.project_fids.length === 0) return;
+      a.project_fids.forEach(pid => {
+        if (!assetsByProject[pid]) assetsByProject[pid] = [];
+        assetsByProject[pid].push(a);
+      });
+    });
+
+    projects.forEach(p => {
+      PROJECT_STORE[p.id] = { proj: p, assets: assetsByProject[p.id] || [] };
+    });
+
+    renderProjects(projects, assetsByProject);
+    initFilters(projects, assetsByProject);
   } catch (err) {
     const grid = document.getElementById('projects-grid');
     if (grid) {

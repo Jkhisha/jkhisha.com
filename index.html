@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joytu Khisha</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="description" content="Joytu Khisha — Robotics & AI Engineer, MSc AI/ML University of Adelaide. I&C Automation, Computer Vision, Software Developer. Dhaka, Bangladesh.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
@@ -469,6 +470,32 @@
       </div>
     </div>
   </footer>
+
+  <!-- ── PROJECT MODAL ── -->
+  <div id="proj-modal" class="proj-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="pm-backdrop" onclick="closeProjectModal()"></div>
+    <div class="pm-panel">
+      <button class="pm-close" onclick="closeProjectModal()" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="pm-inner">
+        <div class="pm-left">
+          <div class="pm-meta"></div>
+          <h2 class="pm-title"></h2>
+          <div class="pm-role"></div>
+          <div class="pm-status"></div>
+          <p class="pm-desc"></p>
+          <div class="pm-tech"></div>
+          <div class="pm-tags"></div>
+          <div class="pm-links"></div>
+        </div>
+        <div class="pm-right">
+          <div class="pm-thumbs"></div>
+          <div class="pm-viewer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ── LIGHTBOX ── -->
   <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
