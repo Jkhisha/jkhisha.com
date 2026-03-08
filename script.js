@@ -31,7 +31,7 @@ function initSplash() {
   }
 
   // Condition 2 — minimum 3 s
-  setTimeout(() => { timerDone = true; tryAnimate(); }, 3000);
+  setTimeout(() => { timerDone = true; tryAnimate(); }, 1000);
 
   // Kick off immediately if already complete
   if (assetsReady) tryAnimate();
