@@ -1,6 +1,75 @@
 'use strict';
 
 /* ─────────────────────────────────────────────
+   SPLASH SCREEN
+   Shows logo centered for min 3 s OR until
+   window.load — whichever is longer.
+   Then FLIPs the logo to the navbar position.
+───────────────────────────────────────────── */
+function initSplash() {
+  const splash     = document.getElementById('splash');
+  const splashLogo = splash && splash.querySelector('.splash-logo-wrap');
+  const navLogo    = document.querySelector('.nav-logo');
+  if (!splash || !splashLogo || !navLogo) return;
+
+  // Lock scroll and mark nav logo hidden via CSS class
+  document.body.classList.add('splashing');
+  document.body.style.overflow = 'hidden';
+
+  let assetsReady = false;
+  let timerDone   = false;
+
+  function tryAnimate() {
+    if (assetsReady && timerDone) doFlip();
+  }
+
+  // Condition 1 — all resources loaded (images, fonts, scripts)
+  if (document.readyState === 'complete') {
+    assetsReady = true;
+  } else {
+    window.addEventListener('load', () => { assetsReady = true; tryAnimate(); });
+  }
+
+  // Condition 2 — minimum 3 s
+  setTimeout(() => { timerDone = true; tryAnimate(); }, 3000);
+
+  // Kick off immediately if already complete
+  if (assetsReady) tryAnimate();
+
+  function doFlip() {
+    // ── FLIP: measure center of splash logo → center of nav logo ──
+    const sr  = splashLogo.getBoundingClientRect();
+    const nr  = navLogo.getBoundingClientRect();
+
+    const dx    = (nr.left + nr.width  / 2) - (sr.left + sr.width  / 2);
+    const dy    = (nr.top  + nr.height / 2) - (sr.top  + sr.height / 2);
+    const scale = nr.width / sr.width;
+
+    splashLogo.style.transform       = `translate(${dx}px, ${dy}px) scale(${scale})`;
+    splashLogo.style.transformOrigin = 'center center';
+
+    // After logo lands at nav position — hand off to real logo, fade splash
+    setTimeout(() => {
+      // Reveal real nav logo seamlessly at same spot
+      document.body.classList.remove('splashing');
+      navLogo.style.transition = 'opacity 0s';
+      navLogo.style.opacity    = '1';
+
+      // Fade out splash logo, then whole overlay
+      splashLogo.style.opacity = '0';
+      splash.classList.add('splash-out');
+
+      // Restore scroll and remove node after fade finishes
+      setTimeout(() => {
+        document.body.style.overflow = '';
+        navLogo.style.transition = '';
+        splash.remove();
+      }, 460);
+    }, 680); // matches 0.65 s CSS transition + small buffer
+  }
+}
+
+/* ─────────────────────────────────────────────
    PROJECT STORE — id → { proj, assets }
 ───────────────────────────────────────────── */
 const PROJECT_STORE = {};
@@ -421,6 +490,7 @@ function initFilters(allProjects, assetsByProject) {
    MAIN INIT
 ───────────────────────────────────────────── */
 async function init() {
+  initSplash();
   initNavbar();
   initNavHighlight();
   initFadeIn();

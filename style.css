@@ -32,6 +32,47 @@ img { display: block; max-width: 100%; }
   --section-pad: 100px;
 }
 
+/* ────────────────────────────────────────────
+   SPLASH SCREEN
+──────────────────────────────────────────── */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.45s ease;
+}
+#splash.splash-out {
+  opacity: 0;
+  pointer-events: none;
+}
+.splash-logo-wrap {
+  width: 120px;
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.25s ease;
+}
+.splash-logo-wrap svg {
+  width: 100%;
+  display: block;
+  filter: none !important;
+}
+.splash-logo-wrap .rect-fill  { fill: var(--accent); }
+.splash-logo-wrap .poly-stroke {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+
+/* Hide real nav-logo while splash is active */
+body.splashing .nav-logo { opacity: 0 !important; }
+
 /* ── All images & videos: grayscale ── */
 img, video { filter: grayscale(1); }
 
