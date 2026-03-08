@@ -214,8 +214,8 @@
   },
   {
     "id": "PROJ-015",
-    "title": "Grameenphone Tower Surveillance Platform",
-    "description": "After Zicom, I joined Rantech Engineering and built their flagship product: a nationwide IoT surveillance platform for approximately 12,000 Grameenphone mobile towers across Bangladesh. The problem it solves is real — UPS battery theft is widespread at remote towers, and equipment faults go undetected for days because there's no eyes on site. I built the entire software stack solo: real-time Google Maps dashboard showing live status for every tower, ONVIF IP camera integration for per-tower CCTV, PIR motion detection with alarm logging, door intrusion sensors, remote siren activation, and a contact database linking each tower to local police and the building owner. Only event-triggered recording — no continuous storage at this scale. Phase 1 covered 700 towers. Client was Grameenphone via i4see Technology as system integrator.",
+    "title": "Mobile Network Tower Surveillance Platform",
+    "description": "After Zicom, I joined Rantech Engineering and built their flagship product: a nationwide IoT surveillance platform for approximately 2,000 mobile network towers across Bangladesh. The problem it solves is real — UPS battery theft is widespread at remote towers, and equipment faults go undetected for days because there's no eyes on site. I built the entire software stack solo: real-time Google Maps dashboard showing live status for every tower, ONVIF IP camera integration for per-tower CCTV, PIR motion detection with alarm logging, door intrusion sensors, remote siren activation, and a contact database linking each tower to local police and the building owner. Only event-triggered recording — no continuous storage at this scale. Phase 1 covered 700 towers. Clients were Mobile Network Operators via i4see Technology as system integrator.",
     "employer": "Rantech Engineering",
     "my_role": "Sole Software Developer",
     "project_type": "Professional",
