@@ -1317,9 +1317,12 @@ img.pm-thumb.active { border-color: var(--accent); opacity: 1; filter: grayscale
   .container { padding: 0 20px; }
   #navbar { padding: 0 20px; gap: 12px; }
 
-  /* Logo always accent on mobile regardless of scroll state */
-  .nav-logo .rect-fill { fill: var(--accent) !important; }
-  .nav-logo .poly-stroke { stroke: var(--accent) !important; }
+  /* Logo: white on transparent, accent on scrolled (same as desktop) */
+  /* (desktop rules already handle this — no override needed) */
+
+  /* Hamburger: white on transparent navbar, dark when scrolled */
+  .nav-hamburger span { background: #ffffff; }
+  #navbar.scrolled .nav-hamburger span { background: var(--text); }
 
   .nav-links { display: none; flex-direction: column; gap: 0; }
   .nav-links.open {
