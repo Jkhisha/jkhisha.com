@@ -1352,13 +1352,15 @@ img.pm-thumb.active { border-color: var(--accent); opacity: 1; filter: grayscale
 
   /* Hero mobile: stacked */
   #hero { height: auto; min-height: 100svh; }
-  .hero-inner { flex-direction: column-reverse; }
+  .hero-inner { flex-direction: column; }
   .hero-strip {
+    order: 0;
     flex: 0 0 55vw;
     height: 55vw;
     width: 100%;
   }
   .hero-text {
+    order: 1;
     flex: none;
     padding: 40px 20px 32px;
   }
