@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jkhisha.com/sitemap.xml
+Sitemap: https://www.jkhisha.com/sitemap.xml
